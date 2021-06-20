@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>Exercise4</title>
+<style>
+  body {
+    margin: 0;
+  }
+
+  .container {
+    margin: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    height: 10vh;
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topnav {
+    margin-top: 20px;
+    height: 10vh;
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    margin-top: 20px;
+    height: 40vh;
+    display: flex;
+  }
+
+  #lcontent {
+    flex-grow: 1;
+    margin-right: 5px;
+    background-color: #F1F1F1;
+  }
+
+  #maincontent {
+    flex-grow: 3;
+    margin-right: 5px;
+    background-color: #F1F1F1;
+  }
+
+  #rcontent {
+    flex-grow: 1;
+    background-color: #F1F1F1;
+  }
+
+  .footer {
+    margin-top: 20px;
+    height: 10vh;
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 800px) {
+    .content {
+      flex-wrap: wrap;
+    }
+
+    #lcontent{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    #maincontent{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    #rcontent{
+      width: 100%;
+      margin-right: 0;
+    }
+
+
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Header</h2>
+    </div>
+
+    <div class="topnav">
+      <h2>Navigation Bar</h2>
+    </div>
+
+    <div class="content">
+      <div id="lcontent">
+        <h2>Content</h2>
+      </div>
+      <div id="maincontent">
+        <h2>Main Content</h2>
+      </div>
+      <div id="rcontent">
+        <h2>Content</h2>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+
+  </div>
+</body>
+
+</html>
