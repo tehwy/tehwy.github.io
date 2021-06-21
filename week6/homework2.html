@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<title>Homework2</title>
+<style>
+    body {
+        margin: 10px;
+        background-color: #666666;
+    }
+
+    .container {
+        color: #F2F2F2;
+        text-align: center;
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .header .leftheader {
+        width: 30%;
+    }
+
+    .leftheader>div {
+        margin: 10px;
+        text-align: center;
+        background-color: #AAAAAA;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .header .rightheader {
+        width: 70%;
+    }
+
+    .rightheader>div {
+        margin: 10px;
+        text-align: center;
+        justify-content: right;
+    }
+
+    #box1 {
+        background-color: #AAAAAA;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        margin-left: 40%;
+        height: 5vh;
+    }
+
+    #box2 {
+        background-color: #AAAAAA;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        margin-left: 10%;
+        height: 5vh;
+    }
+
+    .imagebox>div {
+        text-align: center;
+        margin: 10px;
+        padding: 50px;
+        background-color: #AAAAAA;
+    }
+
+    .contentbox {
+        display: flex;
+    }
+
+    #box4 {
+        width: 60%;
+        margin: 10px;
+        height: 40vh;
+        background-color: #AAAAAA;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #box5 {
+        width: 40%;
+        margin: 10px;
+        height: 40vh;
+        background-color: #AAAAAA;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .footer {
+        margin: 10px;
+        padding: 5px;
+        background-color: #AAAAAA;
+    }
+
+    @media screen and (max-width: 600px) {
+        .header .leftheader {
+            width: 100%;
+        }
+
+        .header .rightheader {
+            width: 100%;
+            display: flex;
+        }
+
+        #box1 {
+            text-align: center;
+            margin-left: 10px;
+            flex: 1;
+            height: 5vh;
+        }
+
+        #box2 {
+            text-align: center;
+            margin-left: 10px;
+            flex: 1;
+            height: 5vh;
+        }
+
+        .contentbox {
+            flex-wrap: wrap;
+        }
+
+        #box4 {
+            width: 100%;
+        }
+
+        #box5 {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="leftheader">
+                <div>
+                    <h2>LOGO</h2>
+                </div>
+            </div>
+            <div class="rightheader">
+                <div id="box1">
+                    <h2>PHONE</h2>
+                </div>
+                <div id="box2">
+                    <h2>MENU</h2>
+                </div>
+            </div>
+        </div>
+        <div class="imagebox">
+            <div id="box3">
+                <h2>IMAGE SLIDE SHOW</h2>
+            </div>
+        </div>
+        <div class="contentbox">
+            <div id="box4">
+                <h2>TEXT CONTENT</h2>
+            </div>
+            <div id="box5">
+                <h2>SIDE BAR</h2>
+            </div>
+        </div>
+        <div class="footer">
+            <div id="box6">
+                <h2>FOOTER</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
