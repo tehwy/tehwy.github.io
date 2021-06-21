@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title>Homework3</title>
+<style>
+    body {
+        margin: 10px;
+        background-color: #4896EB;
+    }
+
+    .container {
+        color: black;
+        text-align: center;
+    }
+
+    .header {
+        margin-top: 20px;
+        height: 10vh;
+        background-color: #DAEAFA;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .content {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .content .boxleft {
+        width: 30%;
+    }
+
+    .boxleft>div {
+        margin-right: 10px;
+        height: 60vh;
+        background-color: #DAEAFA;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .content .boxright {
+        width: 70%;
+        height: 60vh;
+    }
+
+    .boxright .boxupside {
+        display: flex;
+        height: 50%;
+    }
+
+    .boxright .boxdown {
+        display: flex;
+        height: 50%;
+    }
+
+    .boxupside>div {
+        width: 50%;
+    }
+
+    #box1 {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        background-color: #DAEAFA;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #box2 {
+        margin-bottom: 10px;
+        background-color: #DAEAFA;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .boxdown>div {
+        width: 100%;
+    }
+
+    #box3 {
+        background-color: #DAEAFA;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .content {
+            flex-wrap: wrap;
+        }
+
+        .content .boxleft {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .boxleft>div {
+            margin-right: 0;
+        }
+
+        .content .boxright {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .boxright .boxupside {
+            flex-wrap: wrap;
+        }
+
+        #box1{
+            margin-right: 0;
+            width: 100%;
+        }
+
+        #box2{
+            width: 100%;
+        }
+
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Header</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="boxleft">
+                <div>
+                    <h1>MENU</h1>
+                </div>
+            </div>
+            <div class="boxright">
+                <div class="boxupside">
+                    <div id="box1">
+                        <h1>MAIN</h1>
+                    </div>
+                    <div id="box2">
+                        <h1>RIGHT</h1>
+                    </div>
+                </div>
+                <div class="boxdown">
+                    <div id="box3">
+                        <h1>FOOTER</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
