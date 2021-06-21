@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <title>exercise2</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        
+        .container{
+            text-align: center;
+        }
+        
+        .topbox{
+            display: flex;
+        }
+
+        #box1{
+            margin: 10px;
+            width: 40%;
+            padding: 20px;
+            background-color: skyblue;
+        }
+        #box2{
+            margin: 10px;
+            width: 60%;
+            padding: 20px;
+            background-color: skyblue;
+        }
+
+
+        .imagebox>div{
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            background-color: skyblue;
+
+        }
+
+        .content{
+            display: flex;
+        }
+
+        .content>div{
+            margin: 10px;
+            width: 33.33%;
+            padding: 20px;
+            background-color: skyblue;
+        }
+
+        .content2{
+            display: flex;
+        }
+
+        #box7{
+            margin: 10px;
+            width: 30%;
+            padding: 20px;
+            background-color: skyblue;
+        }
+
+        #box8{
+            width: 70%;
+            margin: 10px;
+            padding: 20px;
+            background-color: skyblue;
+        }
+
+        .footer{
+            margin: 10px;
+            padding: 20px;
+            background-color: skyblue;
+        }
+
+        @media screen and (max-width: 600px){
+            .topbox{
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+            }
+
+            .content{
+                flex-wrap: wrap;
+            }
+
+            #box4{
+                width: 35%;
+            }
+
+            #box5{
+                width: 35%;
+            }
+            
+            #box6{
+                width:100%;
+            }
+
+            .content2{
+                flex-wrap: wrap;
+            }
+
+            #box7{
+                width:100%;
+            }
+
+            #box8{
+                width:100%;
+            }
+        }
+
+
+
+        
+
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="topbox">
+                <div id="box1"><h1>logo</h1></div>
+                <div id="box2"><h1>menu</h1></div>
+            </div>
+            <div class="imagebox">
+                <div id="box3"><h1>image slide show</h1></div>
+            </div>
+
+            <div class="content">
+                <div id="box4" ><h2>FEAT A</h2></div>
+                <div id="box5" ><h2>FEAT B</h2></div>
+                <div id="box6"><h2>FEAT C</h2></div>
+            </div>
+
+            <div class="content2">
+                <div id="box7"><h2>SIDE BAR</h2></div>
+                <div id="box8"><h2>TEXT CONTENT</h2></div>
+            </div>
+
+            <div class="footer">
+                <div id="box9"><h2>FOOTER</h2></div>
+            </div>
+        </div>
+    </body>
+</html>
