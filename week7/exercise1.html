@@ -11,16 +11,41 @@
         .header {
             position: relative;
             background-image: url(images/mountain3.png);
+            background-size: cover;
             height: 60vh;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
+        .middleword>div {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .middleword>div p {
+            padding-right: 20px;
+        }
+
+        .middleword>div i{
+            padding-right: 10px;
+        } 
+
         .author {
             position: absolute;
             bottom: 30px;
             left: 30px;
+        }
+
+        .author>div{
+            display: flex;
+            align-items: center;
+        }
+
+        .author i{
+            padding-right: 10px;
         }
 
         .story {
@@ -29,24 +54,37 @@
             width: 300px;
             bottom: 30px;
             right: 30px;
+        }
 
+        .story p {
+            padding-left: 10px;
         }
     </style>
+    <script src="https://kit.fontawesome.com/b7216d1760.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="header">
         <div class="middleword">
             <h1>AMAZING PLACES IN AMERICA TO VISIT</h1>
-
+            <div>
+                <i class="fas fa-bus"></i>
+                <p>TRAVEL GUIDE</p>
+                <i class="fas fa-newspaper"></i>
+                <p>WORLD NEWS</p>
+            </div>
         </div>
         <div class="author">
-            by Steven Voorhees
+            <div>
+                <i class="fas fa-user-alt"></i>
+                <p>by Steven Voorhees</p>
+            </div>
+            
         </div>
 
         <div class="story">
-            <h3>Next Story</h3>
-            <h4>Morbi elelfend a libero</h4>
+            <p>Next Story</p>
+            <p>Morbi elelfend a libero</p>
             <p>Quisque viverra interdum velit, et cursus magna sagittis in. In dui dui.</p>
 
         </div>
