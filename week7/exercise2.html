@@ -5,9 +5,9 @@
     <title>Exercise2</title>
     <style>
         body {
-            margin: 0;
+            margin: auto;
         }
-
+        
         .header {
             text-align: center;
             padding: 20px;
@@ -23,15 +23,22 @@
             flex: 1;
             max-width: 25%;
             padding: 4px;
+            box-sizing: border-box;
         }
 
         .row img {
             margin-top: 8px;
-            align-items: center;
             width: 100%;
         }
 
         @media screen and (max-width: 768px) {
+            .row {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width:480px) {
             .row {
                 flex: 100%;
                 max-width: 100%;
@@ -48,28 +55,28 @@
 
     <div class="container">
         <div class="row">
-            <img src="images/pexels-lisa-3844909.jpg" >
-            <img src="images/pexels-lisa-4354715.jpg" >
-            <img src="images/pexels-lisa-4735285.jpg" >
+            <img src="images/flower.png">
+            <img src="images/leaf.png">
+            <img src="images/pexels-lisa-4735285.jpg">
             <img src="images/pexels-photo-1183021.jpeg">
         </div>
         <div class="row">
+            <img src="images/leaf.png">
+            <img src="images/flower.png">
             <img src="images/pexels-lisa-4354715.jpg">
-            <img src="images/pexels-lisa-3844909.jpg" >
-            <img src="images/pexels-lisa-4354715.jpg" >
-            <img src="images/pexels-lisa-4735285.jpg" >
+            <img src="images/pexels-lisa-4735285.jpg">
         </div>
         <div class="row">
             <img src="images/pexels-photo-1183021.jpeg">
-            <img src="images/pexels-lisa-4735285.jpg" >
-            <img src="images/pexels-lisa-4354715.jpg" >
-            <img src="images/pexels-lisa-3844909.jpg" >
+            <img src="images/pexels-lisa-4735285.jpg">
+            <img src="images/leaf.png">
+            <img src="images/flower.png">
         </div>
         <div class="row">
-            <img src="images/pexels-lisa-4735285.jpg" >
-            <img src="images/pexels-lisa-4354715.jpg" >
-            <img src="images/pexels-lisa-4735285.jpg" >
-            <img src="images/pexels-photo-1183021.jpeg" >
+            <img src="images/pexels-lisa-4735285.jpg">
+            <img src="images/leaf.png">
+            <img src="images/flower.png">
+            <img src="images/pexels-photo-1183021.jpeg">
         </div>
 
 
