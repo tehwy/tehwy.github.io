@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homework2</title>
+    <style>
+        body {
+            margin: 0 auto;
+            max-width: 1280px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container{
+            background-image: url(homework2/background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .logo {
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            bottom: 100px;
+        }
+
+        .header {
+            position: relative;
+            bottom: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        #leftheader {
+            width: 40%;
+            display: flex;
+        }
+
+        #leftheader h4 {
+            margin-left: 20px;
+            color: #C6C6D4;
+        }
+
+        #rightheader {
+            width: 60%;
+            text-align: right;
+        }
+
+        .content {
+            display: flex;
+            position: relative;
+        }
+
+        .leftcontent {
+            margin-right: 40px;
+        }
+
+        #contentphoto {
+            position: absolute;
+            bottom: 0;
+        }
+
+        #contentphoto img {
+            margin-right: 20px;
+        }
+
+        .more {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .bottom>div {
+            width: 230px;
+            height: 250px;
+            background-color: white;
+            border-radius: 20px;
+            margin: 12px;
+            box-shadow: 3px 5px 8px #B7B7B7;
+        }
+
+
+        .bottom>div>div {
+            line-height: 0.5;
+        }
+
+        #box1 {
+            background-image: url(homework2/bottomimage1.png);
+            background-repeat: no-repeat;
+        }
+
+        #box2 {
+            background-image: url(homework2/bottomimage2.png);
+            background-repeat: no-repeat;
+        }
+
+        #box3 {
+            background-image: url(homework2/bottomimage3.png);
+            background-repeat: no-repeat;
+        }
+
+        #box4 {
+            background-image: url(homework2/bottomimage4.png);
+            background-repeat: no-repeat;
+        }
+
+        #box5 {
+            background-image: url(homework2/bottomimage5.png);
+            background-repeat: no-repeat;
+        }
+
+        #box1>div {
+            position: relative;
+            bottom: 10px;
+            padding-left: 15px;
+            top: 120px;
+        }
+
+        #box2>div {
+            position: relative;
+            bottom: 10px;
+            padding-left: 15px;
+            top: 120px;
+        }
+
+        #box3>div {
+            position: relative;
+            bottom: 10px;
+            padding-left: 15px;
+            top: 120px;
+        }
+
+        #box4>div {
+            position: relative;
+            bottom: 10px;
+            padding-left: 15px;
+            top: 120px;
+        }
+
+        #box5>div {
+            position: relative;
+            bottom: 10px;
+            padding-left: 15px;
+            top: 120px;
+        }
+
+        .smallimage1 {
+            position: relative;
+            left: 180px;
+            top: 10px;
+        }
+
+        .smallimage2 {
+            position: relative;
+            left: 190px;
+            top: 60px;
+        }
+
+
+        .contentphotophone {
+            display: none;
+        }
+
+        .button {
+            display: none;
+        }
+
+        .phoneheader {
+            display: none;
+        }
+
+        #article h4 {
+            color: black;
+            border-bottom: 2px solid #4723AE;
+        }
+
+        @media screen and (max-width: 1270px) {
+            .container {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+
+        @media screen and (max-width: 700px) {
+            .container {
+                margin: 0;
+            }
+
+            .phoneheader {
+                display: flex;
+                position: sticky;
+                top: 0;
+                margin: 0;
+            }
+
+            .phoneheader .headerbox {
+                background-color: white;
+                box-shadow: 0px 5px #DFDFDF;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+
+            }
+
+            .content {
+                margin-top: 40px;
+                flex-wrap: wrap;
+                justify-content: center;
+                position: unset;
+            }
+
+            .leftcontent {
+                left: 20px;
+            }
+
+            .more {
+                display: none;
+            }
+
+            #contentphoto {
+                display: none;
+            }
+
+            .contentphotophone {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contentphotophone img {
+                margin-bottom: 30px;
+            }
+
+
+            .rightcontent {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .button {
+                display: inline-block;
+            }
+
+            .button h3 {
+                background-color: #4621AD;
+                padding: 10px 25px;
+                border-radius: 50px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .header {
+                display: none;
+            }
+
+            .bottom>div {
+                z-index: -1;
+            }
+
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="homework2/logo.png">
+        </div>
+        <div class="phoneheader">
+            <div class="headerbox">
+                <img src="homework2/nav.png">
+                <img src="homework2/logophone.png">
+                <img src="homework2/Notification.png">
+            </div>
+        </div>
+        <div class="header">
+            <div id="leftheader">
+                <h4>HOME</h4>
+                <div id="article">
+                    <h4>ARTICLES</h4>
+                </div>
+                <h4>AUDIO</h4>
+            </div>
+            <div id="rightheader">
+                <img src="homework2/Group 2707.png">
+            </div>
+        </div>
+        <div class="content">
+            <div class="leftcontent">
+                <img src="homework2/contentphoto.png">
+            </div>
+            <div class="contentphotophone">
+                <img src="homework2/contentphoto1.png">
+                <img src="homework2/contentphoto2.png">
+                <img src="homework2/contentphoto3.png">
+            </div>
+            <div class="rightcontent">
+                <div id="maincontent">
+                    <h1>Check</h1>
+                    <h1>recommended articles</h1>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="button">
+                    <h3>MORE</h3>
+                </div>
+                <div id="contentphoto">
+                    <img src="homework2/contentphoto1.png">
+                    <img src="homework2/contentphoto2.png">
+                    <img src="homework2/contentphoto3.png">
+                </div>
+                <img src="homework2/more.png" class="more">
+            </div>
+        </div>
+        <div class="bottom">
+            <div id="box1">
+                <img src="homework2/2.png" class="smallimage1">
+                <div>
+                    <h5>PICK ME UP</h5>
+                    <h6>Got the weather blues?</h6>
+                </div>
+                <img src="homework2/Group 2710.png" class="smallimage2">
+            </div>
+            <div id="box2">
+                <img src="homework2/1.png" class="smallimage1">
+                <div>
+                    <h5>FEELING FRAGILE</h5>
+                    <h6>Need a little extra love?</h6>
+                </div>
+                <img src="homework2/Group 2710.png" class="smallimage2">
+            </div>
+            <div id="box3">
+                <img src="homework2/3.png" class="smallimage1">
+                <div>
+                    <h5>DEAR DIARY</h5>
+                    <h6>A modern twist on journaling.</h6>
+                </div>
+                <img src="homework2/Group 2710.png" class="smallimage2">
+            </div>
+            <div id="box4">
+                <img src="homework2/2.png" class="smallimage1">
+                <div>
+                    <h5>SEMINAR</h5>
+                    <h6>Neurogenesis. What is it & why care</h6>
+                </div>
+                <img src="homework2/Group 2710.png" class="smallimage2">
+            </div>
+            <div id="box5">
+                <img src="homework2/2.png" class="smallimage1">
+                <div>
+                    <h5>SEMINAR</h5>
+                    <h6>Neurogenesis. What is it & why care</h6>
+                </div>
+                <img src="homework2/Group 2710.png" class="smallimage2">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homework1</title>
+    <style>
+        body {
+            margin: 0;
+            max-width: 1520px;
+            margin: auto;
+        }
+
+        .container {
+            position: absolute;
+            max-width: 1520px;
+            height: 5000px;
+            background-color: rgba(255, 255, 255, 1);
+            overflow: hidden;
+        }
+
+        .header {
+            position: relative;
+            background-image: url(homework1/Header.png);
+            width: 1500px;
+            height: 1391px;
+            background-repeat: no-repeat;
+            left: 20px;
+            margin-bottom: 200px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 100px;
+        }
+
+        .headerimage {
+            position: absolute;
+            right: 100px;
+            top: 160px;
+        }
+
+        .click {
+            position: absolute;
+            top: 700px;
+            right: 700px;
+        }
+
+        .socialmedia {
+            position: absolute;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 450px;
+        }
+
+        .socialmedia img {
+            margin-bottom: 30px;
+        }
+
+        .bioimage {
+            position: absolute;
+            bottom: -50px;
+        }
+
+        .biobackground {
+            position: absolute;
+            bottom: -75px;
+            right: 0;
+        }
+
+        .biocontent {
+            position: absolute;
+            bottom: 80px;
+            right: 250px;
+        }
+
+        .seemore_bio {
+            position: absolute;
+            bottom: 15px;
+            right: 680px;
+        }
+
+        .servicetitle {
+            flex-direction: column;
+            display: flex;
+            align-items: flex-start;
+            margin-left: 100px;
+            margin-bottom: 200px;
+        }
+
+        .servicecontentbox {
+            position: relative;
+            background-image: url(homework1/Group\ 1238.png);
+            width: 1500px;
+            height: 1100px;
+            background-repeat: no-repeat;
+        }
+
+        .servicecontentbox .row1 {
+            position: absolute;
+            left: 100px;
+            top: -150px;
+        }
+
+        .servicecontentbox .row1>img {
+            margin-right: 20px;
+        }
+
+        .servicecontentbox .row2 {
+            position: absolute;
+            top: 380px;
+            left: 100px;
+        }
+
+        .servicecontentbox .row2>img {
+            margin-right: 20px;
+        }
+
+        .processlogo {
+            position: absolute;
+            left: 250px;
+            top: -90px
+        }
+
+        .processtitle {
+            position: absolute;
+            top: 30px;
+            left: 150px;
+        }
+
+        .processcontent {
+            position: absolute;
+            top: 100px;
+            left: 150px;
+        }
+
+        .seemorebox1 {
+            position: absolute;
+            left: 350px;
+            top: 220px;
+        }
+
+        .seemore1 {
+            position: absolute;
+            left: 368px;
+            top: 225px;
+        }
+
+        .socialmedialogo {
+            position: absolute;
+            left: 720px;
+            top: -90px
+        }
+
+        .socialtitle {
+            position: absolute;
+            top: 30px;
+            left: 610px;
+        }
+
+        .socialmediacontent {
+            position: absolute;
+            top: 100px;
+            left: 610px;
+        }
+
+        .seemorebox2 {
+            position: absolute;
+            left: 830px;
+            top: 220px;
+        }
+
+        .seemore2 {
+            position: absolute;
+            left: 848px;
+            top: 225px;
+        }
+
+        .responsivelogo {
+            position: absolute;
+            right: 230px;
+            top: -90px
+        }
+
+        .responsivetitle {
+            position: absolute;
+            top: 30px;
+            right: 270px;
+        }
+
+        .responsivecontent {
+            position: absolute;
+            top: 100px;
+            right: 140px;
+        }
+
+        .seemorebox3 {
+            position: absolute;
+            right: 150px;
+            top: 220px;
+        }
+
+        .seemore3 {
+            position: absolute;
+            right: 168px;
+            top: 225px;
+        }
+
+        .analysislogo {
+            position: absolute;
+            top: 430px;
+            left: 250px;
+        }
+
+        .analysistitle {
+            position: absolute;
+            top: 550px;
+            left: 150px;
+        }
+
+        .analysiscontent {
+            position: absolute;
+            top: 600px;
+            left: 150px;
+        }
+
+        .seemorebox4 {
+            position: absolute;
+            left: 350px;
+            top: 750px;
+        }
+
+        .seemore4 {
+            position: absolute;
+            left: 368px;
+            top: 755px;
+        }
+
+        .advertisinglogo {
+            position: absolute;
+            top: 430px;
+            left: 720px;
+        }
+
+        .advertisingtitle {
+            position: absolute;
+            top: 550px;
+            left: 610px;
+        }
+
+        .advertisingcontent {
+            position: absolute;
+            top: 600px;
+            left: 610px;
+        }
+
+        .seemorebox5 {
+            position: absolute;
+            left: 830px;
+            top: 750px;
+        }
+
+        .seemore5 {
+            position: absolute;
+            left: 848px;
+            top: 755px;
+        }
+
+        .computerlogo {
+            position: absolute;
+            top: 430px;
+            right: 230px;
+        }
+
+        .computertitle {
+            position: absolute;
+            top: 550px;
+            right: 160px;
+        }
+
+        .computercontent {
+            position: absolute;
+            top: 600px;
+            right: 140px;
+        }
+
+        .seemorebox6 {
+            position: absolute;
+            right: 150px;
+            top: 750px;
+        }
+
+        .seemore6 {
+            position: absolute;
+            right: 168px;
+            top: 755px;
+        }
+
+        .bottom {
+            position: relative;
+            background-image: url(homework1/flav.png);
+            width: 1519px;
+            height: 1200px;
+            background-repeat: no-repeat;
+        }
+
+        .news {
+            position: absolute;
+            bottom: 70px;
+            left: 490px;
+        }
+
+        .bgshape {
+            overflow: visible;
+            position: absolute;
+            width: 1600px;
+            height: 1300px;
+            transform: scale(2, 2);
+            right: 500px;
+            top: 4300px;
+        }
+
+        .bgshape2 {
+            overflow: visible;
+            position: absolute;
+            width: 1600px;
+            height: 1300px;
+            transform: scale(1.5, 1.5);
+            top: 4250px;
+        }
+
+        .logofooter{
+            position: absolute;
+            bottom: 200px;
+            left: 300px;
+        }
+
+        .stayintouch{
+            position: absolute;
+            bottom: 100px;
+            left: 250px;
+        }
+
+        .footer{
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+        }
+
+        .icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 90px;
+            right: 260px;
+        }
+
+        .icon img{
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="homework1/Group 1541.png" class="logo">
+            <img src="homework1/Group 1423.png" class="headerimage">
+            <img src="homework1/Group 1295.png" class="click">
+            <div class="socialmedia">
+                <img src="homework1/003-facebook.png">
+                <img src="homework1/002-google-plus.png">
+                <img src="homework1/001-twitter-logo-silhouette.png">
+                <img src="homework1/instagram.png">
+            </div>
+            <img src="homework1/Group 1538.png" class="bioimage">
+            <img src="homework1/Group 182.png" class="biobackground">
+            <img src="homework1/bio.png" class="biocontent">
+            <img src="homework1/SEE MORE.png" class="seemore_bio">
+        </div>
+
+        <div class="service">
+            <div class="servicetitle">
+                <img src="homework1/OUR SERVICES.png">
+                <img src="homework1/What We Offer.png">
+            </div>
+        </div>
+        <div class="servicecontentbox">
+            <div class="row1">
+                <img src="homework1/Rectangle 25.png">
+                <img src="homework1/Rectangle 25.png">
+                <img src="homework1/Rectangle 25.png">
+            </div>
+            <img src="homework1/001-process.png" class="processlogo">
+            <img src="homework1/SOCIAL MEDIA MANAGEMENT.png" class="processtitle">
+            <img src="homework1/socialmedia_content.png" class="processcontent">
+            <img src="homework1/Path 1523.png" class="seemorebox1">
+            <img src="homework1/SEE MORE.png" class="seemore1">
+            <img src="homework1/002-social-media.png" class="socialmedialogo">
+            <img src="homework1/SOCIALS GROWTH CAMPAIGN.png" class="socialtitle">
+            <img src="homework1/socialmedia_content.png" class="socialmediacontent">
+            <img src="homework1/Path 1523.png" class="seemorebox2">
+            <img src="homework1/SEE MORE.png" class="seemore2">
+            <img src="homework1/003-responsive.png" class="responsivelogo">
+            <img src="homework1/BRANDING & MEDIA.png" class="responsivetitle">
+            <img src="homework1/responsivecontent.png" class="responsivecontent">
+            <img src="homework1/Path 1523.png" class="seemorebox3">
+            <img src="homework1/SEE MORE.png" class="seemore3">
+            <div class="row2">
+                <img src="homework1/Rectangle 25.png">
+                <img src="homework1/Rectangle 25.png">
+                <img src="homework1/Rectangle 25.png">
+            </div>
+            <img src="homework1/007-analysis.png" class="analysislogo">
+            <img src="homework1/INFLUENCER MARKETING.png" class="analysistitle">
+            <img src="homework1/analysiscontent.png" class="analysiscontent">
+            <img src="homework1/Path 1523.png" class="seemorebox4">
+            <img src="homework1/SEE MORE.png" class="seemore4">
+            <img src="homework1/004-social-media-1.png" class="advertisinglogo">
+            <img src="homework1/SOCIAL MEDIA PAID ADVERTISING.png" class="advertisingtitle">
+            <img src="homework1/advertisingcontent.png" class="advertisingcontent">
+            <img src="homework1/Path 1523.png" class="seemorebox5">
+            <img src="homework1/SEE MORE.png" class="seemore5">
+            <img src="homework1/008-computer.png" class="computerlogo">
+            <img src="homework1/CONTENT MARKETING SERVICES.png" class="computertitle">
+            <img src="homework1/computercontent.png" class="computercontent">
+            <img src="homework1/Path 1523.png" class="seemorebox6">
+            <img src="homework1/SEE MORE.png" class="seemore6">
+        </div>
+
+        <div class="bottom">
+            <img src="homework1/newsltr.png" class="news">
+        </div>
+        <div class="contact">
+            <img src="homework1/Bg Shape-1.png" class="bgshape">
+            <img src="homework1/Bg Shape.png" class="bgshape2">
+            <img src="homework1/logo..png" class="logofooter">
+            <img src="homework1/Group 1294.png" class="stayintouch">
+            <img src="homework1/Footer.png" class="footer">
+            <div class="icon">
+                <img src="homework1/old-handphone.png">
+                <img src="homework1/envelope.png">
+                <img src="homework1/maps-and-flags.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
