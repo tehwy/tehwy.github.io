@@ -10,7 +10,7 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        .container{
+        .container {
             background-image: url(homework2/background.png);
             background-size: cover;
             background-repeat: no-repeat;
@@ -72,96 +72,95 @@
         .bottom {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
+            margin-top: 40px;
+            justify-content: space-between;
         }
 
         .bottom>div {
-            width: 230px;
-            height: 250px;
-            background-color: white;
-            border-radius: 20px;
-            margin: 12px;
-            box-shadow: 3px 5px 8px #B7B7B7;
+            flex: 1;
+            width: 260px;
+            border-radius: 15px;
+            box-shadow: 3px 5px 8px #b7b7b7;
+            margin-bottom: 20px;
         }
 
-
-        .bottom>div>div {
-            line-height: 0.5;
+        .bottom .firstbox {
+            margin-right: 15px;
         }
 
-        #box1 {
+        .bottom .box {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        .bottom .lastbox {
+            margin-left: 15px;
+        }
+
+        .bottomtext {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 25px;
+        }
+
+        .bottomtext h5 {
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+
+        .bottomtext p {
+            margin-top: 6px;
+            margin-bottom: 40px;
+            font-size: 10px;
+        }
+
+        .smallimage {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+
+        .bottom .bottomimage1 {
             background-image: url(homework2/bottomimage1.png);
             background-repeat: no-repeat;
+            background-size: 100%;
+            height: 20vh;
+            position: relative;
         }
 
-        #box2 {
+        .bottom .bottomimage2 {
             background-image: url(homework2/bottomimage2.png);
             background-repeat: no-repeat;
+            background-size: 100%;
+            height: 20vh;
+            position: relative;
         }
 
-        #box3 {
+        .bottom .bottomimage3 {
             background-image: url(homework2/bottomimage3.png);
             background-repeat: no-repeat;
+            background-size: 100%;
+            height: 20vh;
+            position: relative;
         }
 
-        #box4 {
+        .bottom .bottomimage4 {
             background-image: url(homework2/bottomimage4.png);
             background-repeat: no-repeat;
+            background-size: 100%;
+            height: 20vh;
+            position: relative;
         }
 
-        #box5 {
+        .bottom .bottomimage5 {
             background-image: url(homework2/bottomimage5.png);
             background-repeat: no-repeat;
-        }
-
-        #box1>div {
+            background-size: 100%;
+            height: 20vh;
             position: relative;
-            bottom: 10px;
-            padding-left: 15px;
-            top: 120px;
         }
-
-        #box2>div {
-            position: relative;
-            bottom: 10px;
-            padding-left: 15px;
-            top: 120px;
-        }
-
-        #box3>div {
-            position: relative;
-            bottom: 10px;
-            padding-left: 15px;
-            top: 120px;
-        }
-
-        #box4>div {
-            position: relative;
-            bottom: 10px;
-            padding-left: 15px;
-            top: 120px;
-        }
-
-        #box5>div {
-            position: relative;
-            bottom: 10px;
-            padding-left: 15px;
-            top: 120px;
-        }
-
-        .smallimage1 {
-            position: relative;
-            left: 180px;
-            top: 10px;
-        }
-
-        .smallimage2 {
-            position: relative;
-            left: 190px;
-            top: 60px;
-        }
-
 
         .contentphotophone {
             display: none;
@@ -184,6 +183,12 @@
             .container {
                 margin-left: 10px;
                 margin-right: 10px;
+            }
+        }
+
+        @media screen and (max-width: 1270px) {
+            .bottom {
+                justify-content: center;
             }
         }
 
@@ -326,45 +331,79 @@
             </div>
         </div>
         <div class="bottom">
-            <div id="box1">
-                <img src="homework2/2.png" class="smallimage1">
-                <div>
-                    <h5>PICK ME UP</h5>
-                    <h6>Got the weather blues?</h6>
+            <div class="firstbox">
+                <div class="bottomimage1">
+                    <img src="homework2/2.png" class="smallimage">
                 </div>
-                <img src="homework2/Group 2710.png" class="smallimage2">
+                <div class="bottomtext">
+                    <div class="text">
+                        <h4>PICK ME UP</h4>
+                        <p>Got the weather blues?</p>
+                    </div>
+                </div>
+                <div class="addbutton">
+                    <img src="homework2/Group 2710.png">
+                </div>
             </div>
-            <div id="box2">
-                <img src="homework2/1.png" class="smallimage1">
-                <div>
-                    <h5>FEELING FRAGILE</h5>
-                    <h6>Need a little extra love?</h6>
+
+            <div class="box">
+                <div class="bottomimage2">
+                    <img src="homework2/1.png" class="smallimage">
                 </div>
-                <img src="homework2/Group 2710.png" class="smallimage2">
+                <div class="bottomtext">
+                    <div class="text">
+                        <h4>FEELING FRAGILE</h4>
+                        <p>Need a little extra love?</p>
+                    </div>
+                </div>
+                <div class="addbutton">
+                    <img src="homework2/Group 2710.png">
+                </div>
             </div>
-            <div id="box3">
-                <img src="homework2/3.png" class="smallimage1">
-                <div>
-                    <h5>DEAR DIARY</h5>
-                    <h6>A modern twist on journaling.</h6>
+
+            <div class="box">
+                <div class="bottomimage3">
+                    <img src="homework2/3.png" class="smallimage">
                 </div>
-                <img src="homework2/Group 2710.png" class="smallimage2">
+                <div class="bottomtext">
+                    <div class="text">
+                        <h4>DEAR DIARY</h4>
+                        <p>A modern twist on journaling.</p>
+                    </div>
+                </div>
+                <div class="addbutton">
+                    <img src="homework2/Group 2710.png">
+                </div>
             </div>
-            <div id="box4">
-                <img src="homework2/2.png" class="smallimage1">
-                <div>
-                    <h5>SEMINAR</h5>
-                    <h6>Neurogenesis. What is it & why care</h6>
+
+            <div class="box">
+                <div class="bottomimage4">
+                    <img src="homework2/2.png" class="smallimage">
                 </div>
-                <img src="homework2/Group 2710.png" class="smallimage2">
+                <div class="bottomtext">
+                    <div class="text">
+                        <h4>SEMINAR</h4>
+                        <p>Neurogenesis. What is it & why care</p>
+                    </div>
+                </div>
+                <div class="addbutton">
+                    <img src="homework2/Group 2710.png">
+                </div>
             </div>
-            <div id="box5">
-                <img src="homework2/2.png" class="smallimage1">
-                <div>
-                    <h5>SEMINAR</h5>
-                    <h6>Neurogenesis. What is it & why care</h6>
+
+            <div class="lastbox">
+                <div class="bottomimage5">
+                    <img src="homework2/2.png" class="smallimage">
                 </div>
-                <img src="homework2/Group 2710.png" class="smallimage2">
+                <div class="bottomtext">
+                    <div class="text">
+                        <h4>SEMINAR</h4>
+                        <p>Neurogenesis. What is it & why care</p>
+                    </div>
+                </div>
+                <div class="addbutton">
+                    <img src="homework2/Group 2710.png">
+                </div>
             </div>
         </div>
     </div>
