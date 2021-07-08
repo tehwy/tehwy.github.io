@@ -181,12 +181,12 @@
             background-color: white;
             border-radius: 20px;
             box-shadow: 3px 5px 8px #B7B7B7;
-            padding: 15px;
+            padding: 20px;
         }
 
         .serviceimg {
             position: relative;
-            left: 100px;
+            left: 105px;
         }
 
         .row1 h4 {
@@ -221,11 +221,11 @@
         .row2>div {
             margin: 40px;
             width: 300px;
-            height: 350px;
+            min-height: 350px;
             background-color: white;
             border-radius: 20px;
             box-shadow: 3px 5px 8px #B7B7B7;
-            padding: 15px;
+            padding: 20px;
             position: relative;
         }
 
@@ -269,17 +269,27 @@
         .pricecontent>div {
             margin: 40px;
             width: 300px;
-            height: 350px;
+            min-height: 350px;
             background-color: white;
             border-radius: 20px;
             box-shadow: 2px 2px 8px #FCFCFC;
             padding: 15px;
             position: relative;
-            line-height: 1.3;
+        }
+
+        .pricecontent h3{
+            color: #42495B;
+            font-size: 28px;
+        }
+
+        .pricecontent p{
+            color: #7A839E;
+            font-size: 16px;
         }
 
         .pricecontent h2 {
             color: #1000FF;
+            font-size: 30px;
         }
 
         .pricebutton {
@@ -329,8 +339,42 @@
             margin-bottom: 200px;
         }
 
-        .newsbox img {
+        .subbox{
+            border: 4px solid #F6F6F6;
+            padding: 0px 10px;
+            border-radius: 10px;
+            width: 250px;
+            height: 35px;
+            background-color: #F6F6F6;
             margin-right: 10px;
+        }
+
+        .elementContainer{
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            background-color: #F6F6F6;
+        }
+
+        .search{
+            border: none;
+            height: 100%;
+            width: 100%;
+            padding: 0px 5px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            background-color: #F6F6F6;
+        }
+
+        .search:focus{
+            outline: none;
+        }
+
+        #search{
+            color: #BCBCCB;
+            margin-left: 20px;
+            background-color: #F6F6F6;
         }
 
         .contact {
@@ -517,10 +561,10 @@
         <div class="pricecontent">
             <div id="boxprice1">
                 <h3>Gold Package</h3>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit
                     amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti.
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel
-                    iaculis dui.</h5>
+                    iaculis dui.</p>
                 <h2>$ 140</h2>
                 <div class="pricebutton">
                     <h4>See Details</h4>
@@ -528,10 +572,10 @@
             </div>
             <div id="boxprice2">
                 <h3>Platinum Package</h3>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit
                     amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti.
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel
-                    iaculis dui.</h5>
+                    iaculis dui.</p>
                 <h2>$ 140</h2>
                 <div class="pricebutton2">
                     <h4>See Details</h4>
@@ -539,10 +583,10 @@
             </div>
             <div id="boxprice3">
                 <h3>Silver Package</h3>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit
                     amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti.
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel
-                    iaculis dui.</h5>
+                    iaculis dui.</p>
                 <h2>$ 140</h2>
                 <div class="pricebutton">
                     <h4>See Details</h4>
@@ -554,7 +598,11 @@
         <h3>Newsletter</h3>
         <h1>Do you want to get Special News?</h1>
         <div class="newsbox">
-            <img src="homework1/subbox.png">
+            <div class="subbox">
+                <div class="elementContainer">
+                    <input type="text" placeholder="Drop your email" class="search">
+                </div>
+                </div>
             <div class="subcribebutton">
                 <h4>Subscribe</h4>
             </div>
