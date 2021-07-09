@@ -158,17 +158,8 @@
             margin-bottom: 20px;
         }
 
-        .bottom .firstbox {
-            margin-right: 15px;
-        }
-
         .bottom .box {
-            margin-right: 15px;
-            margin-left: 15px;
-        }
-
-        .bottom .lastbox {
-            margin-left: 15px;
+            margin-right: 20px;
         }
 
         .bottomtext {
@@ -263,23 +254,23 @@
                 justify-content: center;
             }
 
-            .content{
+            .content {
                 margin: 10px;
             }
         }
 
         @media screen and (max-width: 1275px) {
-            .container {
+            .content {
                 margin: 10px;
             }
 
             .bottom .lastbox {
-                margin-left: 0;
+                margin-left: 15px;
             }
         }
 
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 800px) {
             .container {
                 margin: 0;
             }
@@ -448,7 +439,7 @@
             .bottom .firstbox {
                 margin-right: 0;
             }
-            
+
             .content {
                 margin-top: 40px;
                 flex-wrap: wrap;
@@ -507,7 +498,13 @@
 
             .bottom>div {
                 z-index: -1;
+                flex-wrap: wrap;
+                margin: 10px;
             }
+
+            .bottom .lastbox {
+            margin-left: 0;
+        }
 
         }
     </style>
@@ -533,156 +530,155 @@
                 <h4>LOGO<span>HERE</span></h4>
             </div>
         </div>
-    </div>
-    <div class="header">
-        <div id="leftheader">
-            <h4>HOME</h4>
-            <div id="article">
-                <h4>ARTICLES</h4>
-            </div>
-            <h4>AUDIO</h4>
-        </div>
-        <div class="rightheader">
-            <div class="elementContainer">
-                <i class="fas fa-search" id="search"></i>
-                <input type="text" placeholder="Search" class="search">
-            </div>
-        </div>
-    </div>
-    <nav>
-        <ul>
-            <li>
-                <div class="elementContainer_1">
-                    <div class="searchbox">
-                        <i class="fas fa-search" id="logosearch"></i>
-                        <input type="text" placeholder="Search" class="search_1">
-                    </div>
+        <div class="header">
+            <div id="leftheader">
+                <h4>HOME</h4>
+                <div id="article">
+                    <h4>ARTICLES</h4>
                 </div>
-            </li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Learn</a></li>
-            <li><a href="">Listen</a></li>
-        </ul>
-        <label>
-            <input type="checkbox" name="">
-            <div class="bar">
-                <span class="linetop"></span>
-                <span class="linemiddle"></span>
-                <span class="linebottom"></span>
+                <h4>AUDIO</h4>
             </div>
-        </label>
-        <div class="logo2">
-            <div class="logoimg2">
-                <h1>L</h1>
+            <div class="rightheader">
+                <div class="elementContainer">
+                    <i class="fas fa-search" id="search"></i>
+                    <input type="text" placeholder="Search" class="search">
+                </div>
             </div>
         </div>
-        <div id="bell"><i class="fas fa-bell"></i></div>
-    </nav>
-    <div class="content">
-        <div class="leftcontent">
-            <img src="homework2/contentphoto.png">
-        </div>
-        <div class="contentphotophone">
-            <img src="homework2/contentphoto1.png">
-            <img src="homework2/contentphoto2.png">
-            <img src="homework2/contentphoto3.png">
-        </div>
-        <div class="rightcontent">
-            <div id="maincontent">
-                <h1>Check</h1>
-                <h1>recommended articles</h1>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <nav>
+            <ul>
+                <li>
+                    <div class="elementContainer_1">
+                        <div class="searchbox">
+                            <i class="fas fa-search" id="logosearch"></i>
+                            <input type="text" placeholder="Search" class="search_1">
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Learn</a></li>
+                <li><a href="">Listen</a></li>
+            </ul>
+            <label>
+                <input type="checkbox" name="">
+                <div class="bar">
+                    <span class="linetop"></span>
+                    <span class="linemiddle"></span>
+                    <span class="linebottom"></span>
+                </div>
+            </label>
+            <div class="logo2">
+                <div class="logoimg2">
+                    <h1>L</h1>
+                </div>
             </div>
-            <div class="button">
-                <h3>MORE</h3>
+            <div id="bell"><i class="fas fa-bell"></i></div>
+        </nav>
+        <div class="content">
+            <div class="leftcontent">
+                <img src="homework2/contentphoto.png">
             </div>
-            <div id="contentphoto">
+            <div class="contentphotophone">
                 <img src="homework2/contentphoto1.png">
                 <img src="homework2/contentphoto2.png">
                 <img src="homework2/contentphoto3.png">
             </div>
-            <img src="homework2/more.png" class="more">
-        </div>
-    </div>
-    <div class="bottom">
-        <div class="firstbox">
-            <div class="bottomimage1">
-                <img src="homework2/2.png" class="smallimage">
-            </div>
-            <div class="bottomtext">
-                <div class="text">
-                    <h4>PICK ME UP</h4>
-                    <p>Got the weather blues?</p>
+            <div class="rightcontent">
+                <div id="maincontent">
+                    <h1>Check</h1>
+                    <h1>recommended articles</h1>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
-                <div class="addbutton">
-                    <img src="homework2/Group 2710.png">
+                <div class="button">
+                    <h3>MORE</h3>
                 </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="bottomimage2">
-                <img src="homework2/1.png" class="smallimage">
-            </div>
-            <div class="bottomtext">
-                <div class="text">
-                    <h4>FEELING FRAGILE</h4>
-                    <p>Need a little extra love?</p>
+                <div id="contentphoto">
+                    <img src="homework2/contentphoto1.png">
+                    <img src="homework2/contentphoto2.png">
+                    <img src="homework2/contentphoto3.png">
                 </div>
-                <div class="addbutton">
-                    <img src="homework2/Group 2710.png">
-                </div>
+                <img src="homework2/more.png" class="more">
             </div>
         </div>
-
-        <div class="box">
-            <div class="bottomimage3">
-                <img src="homework2/3.png" class="smallimage">
-            </div>
-            <div class="bottomtext">
-                <div class="text">
-                    <h4>DEAR DIARY</h4>
-                    <p>A modern twist on journaling.</p>
+        <div class="bottom">
+            <div class="box">
+                <div class="bottomimage1">
+                    <img src="homework2/2.png" class="smallimage">
                 </div>
-                <div class="addbutton">
-                    <img src="homework2/Group 2710.png">
+                <div class="bottomtext">
+                    <div class="text">
+                        <h4>PICK ME UP</h4>
+                        <p>Got the weather blues?</p>
+                    </div>
+                    <div class="addbutton">
+                        <img src="homework2/Group 2710.png">
+                    </div>
                 </div>
             </div>
 
-        </div>
-
-        <div class="box">
-            <div class="bottomimage4">
-                <img src="homework2/2.png" class="smallimage">
-            </div>
-            <div class="bottomtext">
-                <div class="text">
-                    <h4>SEMINAR</h4>
-                    <p>Neurogenesis. What is it & why care</p>
+            <div class="box">
+                <div class="bottomimage2">
+                    <img src="homework2/1.png" class="smallimage">
                 </div>
-                <div class="addbutton">
-                    <img src="homework2/Group 2710.png">
-                </div>
-            </div>
-        </div>
-
-        <div class="lastbox">
-            <div class="bottomimage5">
-                <img src="homework2/2.png" class="smallimage">
-            </div>
-            <div class="bottomtext">
-                <div class="text">
-                    <h4>SEMINAR</h4>
-                    <p>Neurogenesis. What is it & why care</p>
-                </div>
-                <div class="addbutton">
-                    <img src="homework2/Group 2710.png">
+                <div class="bottomtext">
+                    <div class="text">
+                        <h4>FEELING FRAGILE</h4>
+                        <p>Need a little extra love?</p>
+                    </div>
+                    <div class="addbutton">
+                        <img src="homework2/Group 2710.png">
+                    </div>
                 </div>
             </div>
 
+            <div class="box">
+                <div class="bottomimage3">
+                    <img src="homework2/3.png" class="smallimage">
+                </div>
+                <div class="bottomtext">
+                    <div class="text">
+                        <h4>DEAR DIARY</h4>
+                        <p>A modern twist on journaling.</p>
+                    </div>
+                    <div class="addbutton">
+                        <img src="homework2/Group 2710.png">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="bottomimage4">
+                    <img src="homework2/2.png" class="smallimage">
+                </div>
+                <div class="bottomtext">
+                    <div class="text">
+                        <h4>SEMINAR</h4>
+                        <p>Neurogenesis. What is it & why care</p>
+                    </div>
+                    <div class="addbutton">
+                        <img src="homework2/Group 2710.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="lastbox">
+                <div class="bottomimage5">
+                    <img src="homework2/2.png" class="smallimage">
+                </div>
+                <div class="bottomtext">
+                    <div class="text">
+                        <h4>SEMINAR</h4>
+                        <p>Neurogenesis. What is it & why care</p>
+                    </div>
+                    <div class="addbutton">
+                        <img src="homework2/Group 2710.png">
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
     </div>
 </body>
 
