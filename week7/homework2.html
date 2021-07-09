@@ -20,15 +20,48 @@
         }
 
         .logo {
-            justify-content: center;
-            text-align: center;
+            border: 2px solid #FFFFFF;
+            box-shadow: 5px 10px 70px #000000;
+            width: 247px;
+            height: 208px;
+            margin: auto;
             position: relative;
-            bottom: 100px;
+            border-radius: 50px;
+            bottom: 130px;
+            background-color: white;
+        }
+
+        .logoimg h1 {
+            color: #FFEE00;
+            font-weight: bold;
+            font-size: 25px;
+            position: absolute;
+            background-color: #5F41B6;
+            padding: 5px 12px;
+            border-radius: 15px;
+            top: 120px;
+            left: 100px;
+        }
+
+        .name {
+            position: absolute;
+            top: 160px;
+            left: 75px;
+        }
+
+        .name h4 {
+            color: #5F41B6;
+            font-weight: bold;
+        }
+
+        .name span {
+            color: #5F41B6;
+            font-weight: 400;
         }
 
         .header {
             position: relative;
-            bottom: 70px;
+            bottom: 90px;
             display: flex;
             align-items: center;
         }
@@ -38,12 +71,16 @@
             display: flex;
         }
 
+        .header h4 {
+            font-size: 15px;
+        }
+
         #leftheader h4 {
             margin-left: 20px;
             color: #C6C6D4;
         }
 
-        .rightheader{
+        .rightheader {
             border: 4px solid #F6F6F6;
             padding: 0px 10px;
             border-radius: 50px;
@@ -54,14 +91,14 @@
             background-color: #F6F6F6;
         }
 
-        .elementContainer{
+        .elementContainer {
             width: 100%;
             height: 100%;
             vertical-align: middle;
             background-color: #F6F6F6;
         }
 
-        .search{
+        .search {
             border: none;
             height: 100%;
             width: 70%;
@@ -72,11 +109,11 @@
             background-color: #F6F6F6;
         }
 
-        .search:focus{
+        .search:focus {
             outline: none;
         }
 
-        #search{
+        #search {
             color: #BCBCCB;
             margin-left: 20px;
             background-color: #F6F6F6;
@@ -216,10 +253,18 @@
             border-bottom: 2px solid #4723AE;
         }
 
+        nav {
+            display: none;
+        }
+
         @media screen and (max-width: 1290px) {
 
             .bottom {
                 justify-content: center;
+            }
+
+            .content{
+                margin: 10px;
             }
         }
 
@@ -239,28 +284,171 @@
                 margin: 0;
             }
 
-            .phoneheader {
+            nav {
+                height: 80px;
+                width: 100%;
+                background-color: white;
+                box-shadow: 0px 5px 10px #DFDFDF;
+                align-items: center;
                 display: flex;
+                justify-content: space-between;
                 position: sticky;
                 top: 0;
+                right: 0;
+            }
+
+            input[type="checkbox"] {
+                visibility: hidden;
+                display: none;
+            }
+
+            .bar {
+                position: relative;
+                cursor: pointer;
+                display: flex;
+            }
+
+            .bar .linemiddle {
+                height: 6px;
+                width: 35px;
+                background-color: #A4AFB7;
+                border-radius: 10px;
+                position: absolute;
+                left: 10px;
+                transition: 0.3s ease;
+            }
+
+            .bar .linetop {
+                bottom: 5px;
+                height: 6px;
+                width: 35px;
+                background-color: #A4AFB7;
+                border-radius: 10px;
+                position: absolute;
+                left: 10px;
+                transition: 0.3s ease;
+            }
+
+            .bar .linebottom {
+                top: 10px;
+                height: 6px;
+                width: 35px;
+                background-color: #A4AFB7;
+                border-radius: 10px;
+                position: absolute;
+                left: 10px;
+                transition: 0.3s ease;
+            }
+
+            input[type="checkbox"]:checked~.bar .linetop {
+                transform: rotate(-53deg);
+                width: 25px;
+                transform-origin: right;
+                top: -10px;
+            }
+
+            input[type="checkbox"]:checked~.bar .linebottom {
+                transform: rotate(53deg);
+                width: 25px;
+                transform-origin: left;
+                top: -10px;
+            }
+
+            input[type="checkbox"]:checked~.bar .linemiddle {
+                transform: translateX(20px);
+                opacity: 0;
+            }
+
+            nav ul {
+                position: fixed;
+                width: 100%;
+                min-height: 400px;
+                background: white;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+                z-index: 1;
+                padding: 0;
                 margin: 0;
             }
 
-            .phoneheader .headerbox {
-                background-color: white;
-                box-shadow: 0px 5px #DFDFDF;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px;
+            nav li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+                list-style: none;
             }
 
-            .bottom .firstbox{
+            nav a {
+                color: #C6C6D4;
+                font-size: 20px;
+                text-decoration: none;
+            }
+
+            a.active,
+            a:hover {
+                border: none;
+                color: #4621AD;
+            }
+
+            nav ul.show {
+                left: 0;
+            }
+
+            .elementContainer_1 {
+                border: 4px solid #F6F6F6;
+                padding: 0px 10px;
+                border-radius: 50px;
+                width: 180px;
+                height: 35px;
+                align-items: center;
+                background-color: #F6F6F6;
+                margin: 50px auto;
+            }
+
+            .searchbox {
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+                background-color: #F6F6F6;
+            }
+
+            .search_1 {
+                border: none;
+                height: 100%;
+                width: 70%;
+                padding: 0px 5px;
+                border-radius: 50px;
+                font-size: 14px;
+                font-weight: 500;
+                background-color: #F6F6F6;
+            }
+
+            .search_1:focus {
+                outline: none;
+            }
+
+            .logoimg2 h1 {
+                color: #FFEE00;
+                font-weight: bold;
+                font-size: 25px;
+                background-color: #5F41B6;
+                padding: 5px 12px;
+                border-radius: 15px;
+            }
+
+            #bell {
+                color: #A4AFB7;
+                font-size: 25px;
+                position: relative;
+                right: 10px;
+            }
+
+            .bottom .firstbox {
                 margin-right: 0;
             }
-
-
+            
             .content {
                 margin-top: 40px;
                 flex-wrap: wrap;
@@ -325,140 +513,176 @@
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b7216d1760.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.bar').click(function () {
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
 </head>
 
 <body>
     <div class="container">
         <div class="logo">
-            <img src="homework2/logo.png">
-        </div>
-        <div class="phoneheader">
-            <div class="headerbox">
-                <img src="homework2/nav.png">
-                <img src="homework2/logophone.png">
-                <img src="homework2/Notification.png">
+            <div class="logoimg">
+                <h1>L</h1>
+            </div>
+            <div class="name">
+                <h4>LOGO<span>HERE</span></h4>
             </div>
         </div>
-        <div class="header">
-            <div id="leftheader">
-                <h4>HOME</h4>
-                <div id="article">
-                    <h4>ARTICLES</h4>
+    </div>
+    <div class="header">
+        <div id="leftheader">
+            <h4>HOME</h4>
+            <div id="article">
+                <h4>ARTICLES</h4>
+            </div>
+            <h4>AUDIO</h4>
+        </div>
+        <div class="rightheader">
+            <div class="elementContainer">
+                <i class="fas fa-search" id="search"></i>
+                <input type="text" placeholder="Search" class="search">
+            </div>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <div class="elementContainer_1">
+                    <div class="searchbox">
+                        <i class="fas fa-search" id="logosearch"></i>
+                        <input type="text" placeholder="Search" class="search_1">
+                    </div>
                 </div>
-                <h4>AUDIO</h4>
+            </li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Learn</a></li>
+            <li><a href="">Listen</a></li>
+        </ul>
+        <label>
+            <input type="checkbox" name="">
+            <div class="bar">
+                <span class="linetop"></span>
+                <span class="linemiddle"></span>
+                <span class="linebottom"></span>
             </div>
-            <div class="rightheader">
-                <div class="elementContainer">
-                    <i class="fas fa-search" id="search"></i>
-                    <input type="text" placeholder="Search" class="search">
-                </div>
+        </label>
+        <div class="logo2">
+            <div class="logoimg2">
+                <h1>L</h1>
             </div>
         </div>
-        <div class="content">
-            <div class="leftcontent">
-                <img src="homework2/contentphoto.png">
+        <div id="bell"><i class="fas fa-bell"></i></div>
+    </nav>
+    <div class="content">
+        <div class="leftcontent">
+            <img src="homework2/contentphoto.png">
+        </div>
+        <div class="contentphotophone">
+            <img src="homework2/contentphoto1.png">
+            <img src="homework2/contentphoto2.png">
+            <img src="homework2/contentphoto3.png">
+        </div>
+        <div class="rightcontent">
+            <div id="maincontent">
+                <h1>Check</h1>
+                <h1>recommended articles</h1>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
-            <div class="contentphotophone">
+            <div class="button">
+                <h3>MORE</h3>
+            </div>
+            <div id="contentphoto">
                 <img src="homework2/contentphoto1.png">
                 <img src="homework2/contentphoto2.png">
                 <img src="homework2/contentphoto3.png">
             </div>
-            <div class="rightcontent">
-                <div id="maincontent">
-                    <h1>Check</h1>
-                    <h1>recommended articles</h1>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <img src="homework2/more.png" class="more">
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="firstbox">
+            <div class="bottomimage1">
+                <img src="homework2/2.png" class="smallimage">
+            </div>
+            <div class="bottomtext">
+                <div class="text">
+                    <h4>PICK ME UP</h4>
+                    <p>Got the weather blues?</p>
                 </div>
-                <div class="button">
-                    <h3>MORE</h3>
+                <div class="addbutton">
+                    <img src="homework2/Group 2710.png">
                 </div>
-                <div id="contentphoto">
-                    <img src="homework2/contentphoto1.png">
-                    <img src="homework2/contentphoto2.png">
-                    <img src="homework2/contentphoto3.png">
-                </div>
-                <img src="homework2/more.png" class="more">
             </div>
         </div>
-        <div class="bottom">
-            <div class="firstbox">
-                <div class="bottomimage1">
-                    <img src="homework2/2.png" class="smallimage">
-                </div>
-                <div class="bottomtext">
-                    <div class="text">
-                        <h4>PICK ME UP</h4>
-                        <p>Got the weather blues?</p>
-                    </div>
-                    <div class="addbutton">
-                        <img src="homework2/Group 2710.png">
-                    </div>
-                </div>
+
+        <div class="box">
+            <div class="bottomimage2">
+                <img src="homework2/1.png" class="smallimage">
             </div>
-
-            <div class="box">
-                <div class="bottomimage2">
-                    <img src="homework2/1.png" class="smallimage">
+            <div class="bottomtext">
+                <div class="text">
+                    <h4>FEELING FRAGILE</h4>
+                    <p>Need a little extra love?</p>
                 </div>
-                <div class="bottomtext">
-                    <div class="text">
-                        <h4>FEELING FRAGILE</h4>
-                        <p>Need a little extra love?</p>
-                    </div>
-                    <div class="addbutton">
-                        <img src="homework2/Group 2710.png">
-                    </div>
+                <div class="addbutton">
+                    <img src="homework2/Group 2710.png">
                 </div>
-            </div>
-
-            <div class="box">
-                <div class="bottomimage3">
-                    <img src="homework2/3.png" class="smallimage">
-                </div>
-                <div class="bottomtext">
-                    <div class="text">
-                        <h4>DEAR DIARY</h4>
-                        <p>A modern twist on journaling.</p>
-                    </div>
-                    <div class="addbutton">
-                        <img src="homework2/Group 2710.png">
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="box">
-                <div class="bottomimage4">
-                    <img src="homework2/2.png" class="smallimage">
-                </div>
-                <div class="bottomtext">
-                    <div class="text">
-                        <h4>SEMINAR</h4>
-                        <p>Neurogenesis. What is it & why care</p>
-                    </div>
-                    <div class="addbutton">
-                        <img src="homework2/Group 2710.png">
-                    </div>
-                </div>
-            </div>
-
-            <div class="lastbox">
-                <div class="bottomimage5">
-                    <img src="homework2/2.png" class="smallimage">
-                </div>
-                <div class="bottomtext">
-                    <div class="text">
-                        <h4>SEMINAR</h4>
-                        <p>Neurogenesis. What is it & why care</p>
-                    </div>
-                    <div class="addbutton">
-                        <img src="homework2/Group 2710.png">
-                    </div>
-                </div>
-
             </div>
         </div>
+
+        <div class="box">
+            <div class="bottomimage3">
+                <img src="homework2/3.png" class="smallimage">
+            </div>
+            <div class="bottomtext">
+                <div class="text">
+                    <h4>DEAR DIARY</h4>
+                    <p>A modern twist on journaling.</p>
+                </div>
+                <div class="addbutton">
+                    <img src="homework2/Group 2710.png">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="bottomimage4">
+                <img src="homework2/2.png" class="smallimage">
+            </div>
+            <div class="bottomtext">
+                <div class="text">
+                    <h4>SEMINAR</h4>
+                    <p>Neurogenesis. What is it & why care</p>
+                </div>
+                <div class="addbutton">
+                    <img src="homework2/Group 2710.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="lastbox">
+            <div class="bottomimage5">
+                <img src="homework2/2.png" class="smallimage">
+            </div>
+            <div class="bottomtext">
+                <div class="text">
+                    <h4>SEMINAR</h4>
+                    <p>Neurogenesis. What is it & why care</p>
+                </div>
+                <div class="addbutton">
+                    <img src="homework2/Group 2710.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
     </div>
 </body>
 
