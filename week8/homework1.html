@@ -3,673 +3,675 @@
 <!--Week 8  :Homewrok1-->
 <!--Name: Teh Wai You-->
 <!--Student ID: 2105111-->
+
 <head>
-<title>Week8 Homework1</title>
-<style>
-    body {
-        margin: 0 auto;
-        font-family: 'Montserrat', sans-serif;
-        background-image: url(homework1/backgorund.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-
-    .container {
-        position: relative;
-    }
-
-    .container::before {
-        content: "";
-        background-color: #4723AD;
-        opacity: 83%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        z-index: -1;
-    }
-
-    .logo {
-        border: 2px solid #FFFFFF;
-        box-shadow: 5px 10px 70px #000000;
-        width: 247px;
-        height: 208px;
-        margin: auto;
-        position: relative;
-        border-radius: 50px;
-        bottom: 130px;
-        background-color: white;
-    }
-
-    .logoimg h1 {
-        color: #FFEE00;
-        font-weight: bold;
-        font-size: 25px;
-        position: absolute;
-        background-color: #5F41B6;
-        padding: 5px 12px;
-        border-radius: 15px;
-        top: 120px;
-        left: 100px;
-    }
-
-    .name {
-        position: absolute;
-        top: 160px;
-        left: 75px;
-    }
-
-    .name h4 {
-        color: #5F41B6;
-        font-weight: bold;
-    }
-
-    .name span {
-        color: #5F41B6;
-        font-weight: 400;
-    }
-
-    .header {
-        position: relative;
-        bottom: 120px;
-        display: flex;
-        align-items: center;
-    }
-
-    .header h4 {
-        font-size: 15px;
-    }
-
-    #home h4 {
-        border-bottom: 2px solid white;
-    }
-
-    #article h4:hover {
-        color: black;
-        cursor: pointer;
-    }
-
-    #audio h4:hover {
-        color: black;
-        cursor: pointer;
-    }
-
-
-    #leftheader {
-        position: relative;
-        left: 200px;
-        display: flex;
-    }
-
-    #leftheader h4 {
-        margin-left: 20px;
-        color: #FFFFFF;
-    }
-
-    .content {
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        bottom: 50px;
-    }
-
-    .contentupside h1 {
-        font-size: 40px;
-        color: white;
-    }
-
-    .contentupside p {
-        font-size: 14px;
-        color: white;
-    }
-
-    .contentbelow {
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contentbelow>div {
-        width: 275px;
-        min-height: 160px;
-        padding: 10px;
-    }
-
-    .contentbelow h3 {
-        font-size: 15px;
-        color: white;
-    }
-
-    .contentbelow p {
-        font-size: 14px;
-        color: white;
-    }
-
-    .bottom {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-
-    .bottom>div {
-        margin-bottom: 150px;
-    }
-
-    .singup h3 {
-        font-size: 14px;
-        color: white;
-        border: 2px solid white;
-        padding: 10px 80px;
-        border-radius: 30px;
-        margin-right: 30px;
-    }
-
-    .login h3 {
-        font-size: 14px;
-        color: white;
-        border: 2px solid white;
-        padding: 10px 80px;
-        border-radius: 30px;
-        margin-left: 30px;
-    }
-
-    .singup h3:hover {
-        color: #4621AD;
-        background-color: white;
-        cursor: pointer;
-    }
-
-    .login h3:hover {
-        color: #4621AD;
-        background-color: white;
-        cursor: pointer;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .phonebackground {
-        display: none;
-    }
-
-    @media screen and (max-width: 1480px) {
-        #leftheader{
-            position: relative;
-            left: 20px;
-        }
-    }
-
-    @media screen and (max-width: 700px) {
-
+    <title>Homepage</title>
+    <style>
         body {
-            background-image: none;
+            margin: 0 auto;
+            font-family: 'Montserrat', sans-serif;
+            background-image: url(homework1/backgorund.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
-        .background {
-            display: none;
-        }
 
-        nav {
-            height: 80px;
-            width: 100%;
-            background-color: white;
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            right: 0;
-            z-index: 1;
-        }
-
-        input[type="checkbox"] {
-            visibility: hidden;
-            display: none;
-        }
-
-        .bar {
+        .container {
             position: relative;
-            cursor: pointer;
-            display: flex;
         }
 
-        .bar .linemiddle {
-            height: 6px;
-            width: 35px;
-            background-color: #A4AFB7;
-            border-radius: 10px;
+        .container::before {
+            content: "";
+            background-color: #4723AD;
+            opacity: 83%;
             position: absolute;
-            left: 10px;
-            transition: 0.3s ease;
-        }
-
-        .bar .linetop {
-            bottom: 5px;
-            height: 6px;
-            width: 35px;
-            background-color: #A4AFB7;
-            border-radius: 10px;
-            position: absolute;
-            left: 10px;
-            transition: 0.3s ease;
-        }
-
-        .bar .linebottom {
-            top: 10px;
-            height: 6px;
-            width: 35px;
-            background-color: #A4AFB7;
-            border-radius: 10px;
-            position: absolute;
-            left: 10px;
-            transition: 0.3s ease;
-        }
-
-        input[type="checkbox"]:checked~.bar .linetop {
-            transform: rotate(-53deg);
-            width: 25px;
-            transform-origin: right;
-            top: -10px;
-        }
-
-        input[type="checkbox"]:checked~.bar .linebottom {
-            transform: rotate(53deg);
-            width: 25px;
-            transform-origin: left;
-            top: -10px;
-        }
-
-        input[type="checkbox"]:checked~.bar .linemiddle {
-            transform: translateX(20px);
-            opacity: 0;
-        }
-
-        nav ul {
-            position: fixed;
-            width: 100%;
-            min-height: 400px;
-            background: white;
-            top: 80px;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            display: block;
-            margin: 50px 0;
-            line-height: 30px;
-            list-style: none;
-
-        }
-
-        nav a {
-            color: #C6C6D4;
-            font-size: 20px;
-            text-decoration: none;
-        }
-
-        a.active,
-        a:hover {
-            border: none;
-            color: #4621AD;
-        }
-
-        nav ul.show {
+            top: 0;
+            bottom: 0;
+            right: 0;
             left: 0;
+            z-index: -1;
         }
 
-        .rightheader {
-            border: 4px solid #F6F6F6;
-            padding: 0px 10px;
+        .logo {
+            border: 2px solid #FFFFFF;
+            box-shadow: 5px 10px 70px #000000;
+            width: 247px;
+            height: 208px;
+            margin: auto;
+            position: relative;
             border-radius: 50px;
-            width: 180px;
-            height: 35px;
-            justify-content: center;
-            background-color: #F6F6F6;
-            margin: 50px auto;
+            bottom: 130px;
+            background-color: white;
         }
 
-        .elementContainer {
-            width: 100%;
-            height: 100%;
-            vertical-align: middle;
-            background-color: #F6F6F6;
-        }
-
-        .search {
-            border: none;
-            height: 100%;
-            width: 70%;
-            padding: 0px 5px;
-            border-radius: 50px;
-            font-size: 14px;
-            font-weight: 500;
-            background-color: #F6F6F6;
-        }
-
-        .search:focus {
-            outline: none;
-        }
-
-        #search {
-            color: #BCBCCB;
-            margin-left: 20px;
-            background-color: #F6F6F6;
-        }
-
-        .logoimg2 h1 {
+        .logoimg h1 {
             color: #FFEE00;
             font-weight: bold;
             font-size: 25px;
+            position: absolute;
             background-color: #5F41B6;
             padding: 5px 12px;
             border-radius: 15px;
+            top: 120px;
+            left: 100px;
         }
 
-        #bell {
-            color: #A4AFB7;
-            font-size: 20px;
-            position: relative;
-            right: 10px;
+        .name {
+            position: absolute;
+            top: 160px;
+            left: 75px;
         }
 
-        .content {
-            position: relative;
-            top: 0px;
-        }
-
-        .maincontent h1 {
-            font-size: 40px;
+        .name h4 {
+            color: #5F41B6;
             font-weight: bold;
         }
 
-        .maincontent p {
-            font-size: 14px;
-            font-weight: lighter;
+        .name span {
+            color: #5F41B6;
+            font-weight: 400;
         }
 
-        .contentforphone {
-            text-align: left;
-            position: absolute;
-            left: 50px;
+        .header {
+            position: relative;
+            bottom: 100px;
+            right: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header h4 {
+            font-size: 15px;
+        }
+
+        #home h4 {
+            border-bottom: 2px solid white;
+        }
+
+        #article h4:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+        #audio h4:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+
+        #leftheader {
+            position: relative;
+            left: 200px;
+            display: flex;
+        }
+
+        #leftheader h4 {
+            margin-left: 20px;
+            color: #FFFFFF;
+        }
+
+        .content {
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            bottom: 50px;
+        }
+
+        .contentupside h1 {
+            font-size: 40px;
             color: white;
         }
 
-        .contentforphone h1 {
-            font-size: 40px;
+        .contentupside p {
+            font-size: 14px;
+            color: white;
         }
 
         .contentbelow {
-            position: relative;
-            top: 100px;
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contentbelow>div {
+            width: 275px;
+            min-height: 160px;
+            padding: 10px;
+        }
+
+        .contentbelow h3 {
+            font-size: 15px;
+            color: white;
+        }
+
+        .contentbelow p {
+            font-size: 14px;
+            color: white;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .bottom>div {
+            margin-bottom: 150px;
+        }
+
+        .singup h3 {
+            font-size: 14px;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 80px;
+            border-radius: 30px;
+            margin-right: 30px;
+        }
+
+        .login h3 {
+            font-size: 14px;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 80px;
+            border-radius: 30px;
+            margin-left: 30px;
+        }
+
+        .singup h3:hover {
+            color: #4621AD;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .login h3:hover {
+            color: #4621AD;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            display: none;
         }
 
         .phonebackground {
-            display: block;
-            background-image: url(homework1/phonebackground.png);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 2400px;
-            position: relative;
+            display: none;
         }
 
-        .phonecontent {
-            margin: 50px;
-            position: relative;
-            top: 50px;
-            color: white;
+        @media screen and (max-width: 1480px) {
+            #leftheader {
+                position: relative;
+                left: 20px;
+            }
         }
 
-        .phonecontentbox {
-            justify-content: center;
-            text-align: center;
-            display: flex;
-            flex-wrap: wrap;
+        @media screen and (max-width: 700px) {
+
+            body {
+                background-image: none;
+            }
+
+            .background {
+                display: none;
+            }
+
+            nav {
+                height: 70px;
+                width: 100%;
+                background-color: white;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                position: sticky;
+                top: 0;
+                right: 0;
+                z-index: 1;
+            }
+
+            input[type="checkbox"] {
+                visibility: hidden;
+                display: none;
+            }
+
+            .bar {
+                position: relative;
+                cursor: pointer;
+                display: flex;
+            }
+
+            .bar .linemiddle {
+                height: 6px;
+                width: 35px;
+                background-color: #A4AFB7;
+                border-radius: 10px;
+                position: absolute;
+                left: 10px;
+                transition: 0.3s ease;
+            }
+
+            .bar .linetop {
+                bottom: 5px;
+                height: 6px;
+                width: 35px;
+                background-color: #A4AFB7;
+                border-radius: 10px;
+                position: absolute;
+                left: 10px;
+                transition: 0.3s ease;
+            }
+
+            .bar .linebottom {
+                top: 10px;
+                height: 6px;
+                width: 35px;
+                background-color: #A4AFB7;
+                border-radius: 10px;
+                position: absolute;
+                left: 10px;
+                transition: 0.3s ease;
+            }
+
+            input[type="checkbox"]:checked~.bar .linetop {
+                transform: rotate(-53deg);
+                width: 25px;
+                transform-origin: right;
+                top: -10px;
+            }
+
+            input[type="checkbox"]:checked~.bar .linebottom {
+                transform: rotate(53deg);
+                width: 25px;
+                transform-origin: left;
+                top: -10px;
+            }
+
+            input[type="checkbox"]:checked~.bar .linemiddle {
+                transform: translateX(20px);
+                opacity: 0;
+            }
+
+            nav ul {
+                position: fixed;
+                width: 100%;
+                min-height: 400px;
+                background: white;
+                top: 70px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+                list-style: none;
+
+            }
+
+            nav a {
+                color: #C6C6D4;
+                font-size: 20px;
+                text-decoration: none;
+            }
+
+            a.active,
+            a:hover {
+                border: none;
+                color: #4621AD;
+            }
+
+            nav ul.show {
+                left: 0;
+            }
+
+            .rightheader {
+                border: 4px solid #F6F6F6;
+                padding: 0px 10px;
+                border-radius: 50px;
+                width: 180px;
+                height: 35px;
+                justify-content: center;
+                background-color: #F6F6F6;
+                margin: 50px auto;
+            }
+
+            .elementContainer {
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+                background-color: #F6F6F6;
+            }
+
+            .search {
+                border: none;
+                height: 100%;
+                width: 70%;
+                padding: 0px 5px;
+                border-radius: 50px;
+                font-size: 14px;
+                font-weight: 500;
+                background-color: #F6F6F6;
+            }
+
+            .search:focus {
+                outline: none;
+            }
+
+            #search {
+                color: #BCBCCB;
+                margin-left: 20px;
+                background-color: #F6F6F6;
+            }
+
+            .logoimg2 h1 {
+                color: #FFEE00;
+                font-weight: bold;
+                font-size: 25px;
+                background-color: #5F41B6;
+                padding: 5px 12px;
+                border-radius: 15px;
+            }
+
+            #bell {
+                color: #A4AFB7;
+                font-size: 25px;
+                position: relative;
+                right: 10px;
+            }
+
+            .content {
+                position: relative;
+                top: 0px;
+            }
+
+            .maincontent h1 {
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            .maincontent p {
+                font-size: 14px;
+                font-weight: lighter;
+            }
+
+            .contentforphone {
+                text-align: left;
+                position: absolute;
+                left: 50px;
+                color: white;
+            }
+
+            .contentforphone h1 {
+                font-size: 40px;
+            }
+
+            .contentbelow {
+                position: relative;
+                top: 100px;
+            }
+
+            .phonebackground {
+                display: block;
+                background-image: url(homework1/phonebackground1.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 2400px;
+                position: relative;
+            }
+
+            .phonecontent {
+                margin: 50px;
+                position: relative;
+                top: 50px;
+                color: white;
+            }
+
+            .phonecontentbox {
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .phonecontentbox>div {
+                margin: 50px 30px;
+            }
+
+            .loginbox {
+                margin-top: 100px;
+                display: block;
+                background-color: white;
+                width: 350px;
+                height: 600px;
+                margin: auto;
+                border-radius: 20px;
+            }
+
+            .phonebutton {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+
+            #singup h3 {
+                font-size: 14px;
+                color: #4621AD;
+                border: 2px solid #4621AD;
+                padding: 10px 30px;
+                border-radius: 30px;
+                margin-right: 20px;
+                margin-top: 30px;
+                cursor: pointer;
+            }
+
+            #singup h3:hover {
+                background-color: #4621AD;
+                color: white;
+            }
+
+            #login h3 {
+                font-size: 14px;
+                color: #4621AD;
+                border: 2px solid #4621AD;
+                padding: 10px 30px;
+                border-radius: 30px;
+                margin-left: 20px;
+                margin-top: 30px;
+                cursor: pointer;
+            }
+
+            #login h3:hover {
+                background-color: #4621AD;
+                color: white;
+            }
+
+            .gender {
+                margin-top: 50px;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+
+            #male img {
+                background: #4621AD;
+                padding: 50px 40px;
+                border-radius: 10px;
+                margin-right: 20px;
+                cursor: pointer;
+            }
+
+            #female img {
+                background: white;
+                padding: 50px 40px;
+                border-radius: 10px;
+                box-shadow: 2px 5px 10px #707070;
+                margin-left: 20px;
+                cursor: pointer;
+            }
+
+            .user {
+                border: 2px solid #4621AD;
+                padding: 0px 10px;
+                border-radius: 50px;
+                width: 250px;
+                height: 30px;
+                justify-content: center;
+                background-color: white;
+                margin: 50px auto;
+            }
+
+            .userinputContainer {
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+                background-color: white;
+                border-radius: 5px;
+            }
+
+            .username {
+                border: none;
+                height: 100%;
+                width: 70%;
+                padding: 0px 5px;
+                border-radius: 50px;
+                font-size: 12px;
+                font-weight: 500;
+                background-color: white;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .username:focus {
+                outline: none;
+            }
+
+            #user {
+                color: #CDD0D9;
+                margin-left: 40px;
+                background-color: white;
+            }
+
+            .mail {
+                border: 2px solid #4621AD;
+                padding: 0px 10px;
+                border-radius: 50px;
+                width: 250px;
+                height: 30px;
+                justify-content: center;
+                background-color: white;
+                margin: 50px auto;
+                position: relative;
+                bottom: 20px;
+            }
+
+            .mailinputContainer {
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+                background-color: white;
+                border-radius: 5px;
+                color: #CDD0D9;
+            }
+
+            .mailbox {
+                border: none;
+                height: 100%;
+                width: 70%;
+                padding: 0px 5px;
+                border-radius: 50px;
+                font-size: 12px;
+                font-weight: 500;
+                background-color: white;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .mailbox:focus {
+                outline: none;
+            }
+
+            #mail {
+                color: #CDD0D9;
+                margin-left: 40px;
+                background-color: white;
+            }
+
+            .selectbox {
+                border: 2px solid #4621AD;
+                padding: 0px 10px;
+                border-radius: 50px;
+                width: 250px;
+                height: 30px;
+                justify-content: center;
+                background-color: white;
+                margin: 50px auto;
+                position: relative;
+                bottom: 40px;
+            }
+
+            .selectbox select {
+                border: none;
+                font-size: 12px;
+                padding: 5px;
+                width: 245px;
+                font-family: 'Montserrat', sans-serif;
+                border-radius: 5px;
+                outline: none;
+            }
+
+            .plus {
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                position: relative;
+                bottom: 50px;
+            }
+
+
+            .plus p {
+                position: relative;
+                bottom: 50px;
+                font-size: 40px;
+                color: #FFEE00;
+                background-color: #4723AE;
+                width: 50px;
+                border-radius: 50px;
+            }
+
+            .copyright {
+                position: absolute;
+                bottom: 0;
+                background-color: #4621AD;
+                width: 100%;
+            }
+
+            .copyright p {
+                color: white;
+                text-align: center;
+                font-size: 12px;
+            }
+
         }
-
-        .phonecontentbox>div {
-            margin: 50px 30px;
-        }
-
-        .loginbox {
-            margin-top: 100px;
-            display: block;
-            background-color: white;
-            width: 350px;
-            height: 600px;
-            margin: auto;
-            border-radius: 20px;
-        }
-
-        .phonebutton {
-            display: flex;
-            text-align: center;
-            justify-content: center;
-        }
-
-        #singup h3 {
-            font-size: 14px;
-            color: #4621AD;
-            border: 2px solid #4621AD;
-            padding: 10px 30px;
-            border-radius: 30px;
-            margin-right: 20px;
-            margin-top: 30px;
-            cursor: pointer;
-        }
-
-        #singup h3:hover {
-            background-color: #4621AD;
-            color: white;
-        }
-
-        #login h3 {
-            font-size: 14px;
-            color: #4621AD;
-            border: 2px solid #4621AD;
-            padding: 10px 30px;
-            border-radius: 30px;
-            margin-left: 20px;
-            margin-top: 30px;
-            cursor: pointer;
-        }
-
-        #login h3:hover {
-            background-color: #4621AD;
-            color: white;
-        }
-
-        .gender {
-            margin-top: 50px;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-        }
-
-        #male img {
-            background: #4621AD;
-            padding: 50px 40px;
-            border-radius: 10px;
-            margin-right: 20px;
-            cursor: pointer;
-        }
-
-        #female img {
-            background: white;
-            padding: 50px 40px;
-            border-radius: 10px;
-            box-shadow: 2px 5px 10px #707070;
-            margin-left: 20px;
-            cursor: pointer;
-        }
-
-        .user {
-            border: 2px solid #4621AD;
-            padding: 0px 10px;
-            border-radius: 50px;
-            width: 250px;
-            height: 30px;
-            justify-content: center;
-            background-color: white;
-            margin: 50px auto;
-        }
-
-        .userinputContainer {
-            width: 100%;
-            height: 100%;
-            vertical-align: middle;
-            background-color: white;
-            border-radius: 5px;
-        }
-
-        .username {
-            border: none;
-            height: 100%;
-            width: 70%;
-            padding: 0px 5px;
-            border-radius: 50px;
-            font-size: 12px;
-            font-weight: 500;
-            background-color: white;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .username:focus {
-            outline: none;
-        }
-
-        #user {
-            color: #CDD0D9;
-            margin-left: 40px;
-            background-color: white;
-        }
-
-        .mail {
-            border: 2px solid #4621AD;
-            padding: 0px 10px;
-            border-radius: 50px;
-            width: 250px;
-            height: 30px;
-            justify-content: center;
-            background-color: white;
-            margin: 50px auto;
-            position: relative;
-            bottom: 20px;
-        }
-
-        .mailinputContainer {
-            width: 100%;
-            height: 100%;
-            vertical-align: middle;
-            background-color: white;
-            border-radius: 5px;
-            color: #CDD0D9;
-        }
-
-        .mailbox {
-            border: none;
-            height: 100%;
-            width: 70%;
-            padding: 0px 5px;
-            border-radius: 50px;
-            font-size: 12px;
-            font-weight: 500;
-            background-color: white;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .mailbox:focus {
-            outline: none;
-        }
-
-        #mail {
-            color: #CDD0D9;
-            margin-left: 40px;
-            background-color: white;
-        }
-
-        .selectbox {
-            border: 2px solid #4621AD;
-            padding: 0px 10px;
-            border-radius: 50px;
-            width: 250px;
-            height: 30px;
-            justify-content: center;
-            background-color: white;
-            margin: 50px auto;
-            position: relative;
-            bottom: 40px;
-        }
-
-        .selectbox select {
-            border: none;
-            font-size: 12px;
-            padding: 5px;
-            width: 245px;
-            font-family: 'Montserrat', sans-serif;
-            border-radius: 5px;
-            outline: none;
-        }
-
-        .plus {
-            text-align: center;
-            justify-content: center;
-            display: flex;
-            position: relative;
-            bottom: 50px;
-        }
-
-
-        .plus p {
-            position: relative;
-            bottom: 50px;
-            font-size: 40px;
-            color: #FFEE00;
-            background-color: #4723AE;
-            width: 50px;
-            border-radius: 50px;
-        }
-
-        .copyright{
-            position: absolute;
-            bottom: 0;
-            background-color: #4621AD;
-            width: 100%;
-        }
-
-        .copyright p{
-            color: white;
-            text-align: center;
-            font-size: 12px;
-        }
-
-    }
-</style>
-<script src="https://kit.fontawesome.com/b7216d1760.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.bar').click(function () {
-            $('ul').toggleClass('show');
+    </style>
+    <script src="https://kit.fontawesome.com/b7216d1760.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.bar').click(function () {
+                $('ul').toggleClass('show');
+            });
         });
-    });
-</script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -694,7 +696,10 @@
                         </a>
                     </div>
                     <div id="audio">
-                        <h4>AUDIO</h4>
+                        <a href="https://tehwy.github.io/week8/homework2.html" target="_new">
+                            <h4>AUDIO</h4>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -752,7 +757,7 @@
                 </div>
                 <li><a href="">HOME</a></li>
                 <li><a href="https://tehwy.github.io/week7/homework2.html" target="_new">LEARN</a></li>
-                <li><a href="">LISTEN</a></li>
+                <li><a href="https://tehwy.github.io/week8/homework2.html" target="_new">LISTEN</a></li>
             </ul>
             <label>
                 <input type="checkbox" name="">
