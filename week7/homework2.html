@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <title>Homework2</title>
+    <title>Article</title>
     <style>
         body {
             margin: 0 auto;
@@ -78,6 +78,16 @@
         #leftheader h4 {
             margin-left: 20px;
             color: #C6C6D4;
+        }
+
+        #home h4:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+        #audio h4:hover {
+            color: black;
+            cursor: pointer;
         }
 
         .rightheader {
@@ -244,6 +254,10 @@
             border-bottom: 2px solid #4723AE;
         }
 
+        a{
+            text-decoration: none;
+        }
+
         nav {
             display: none;
         }
@@ -276,7 +290,7 @@
             }
 
             nav {
-                height: 80px;
+                height: 70px;
                 width: 100%;
                 background-color: white;
                 box-shadow: 0px 5px 10px #DFDFDF;
@@ -355,7 +369,7 @@
                 width: 100%;
                 min-height: 400px;
                 background: white;
-                top: 80px;
+                top: 70px;
                 left: -100%;
                 text-align: center;
                 transition: all .5s;
@@ -403,6 +417,7 @@
                 height: 100%;
                 vertical-align: middle;
                 background-color: #F6F6F6;
+                color: #BCBCCB;
             }
 
             .search_1 {
@@ -532,11 +547,19 @@
         </div>
         <div class="header">
             <div id="leftheader">
-                <h4>HOME</h4>
+                <div id="home">
+                    <a href="https://tehwy.github.io/week8/homework1.html" target="_new">
+                        <h4>HOME</h4>
+                    </a>
+                </div>
                 <div id="article">
                     <h4>ARTICLES</h4>
                 </div>
-                <h4>AUDIO</h4>
+                <div id="audio">
+                    <a href="https://tehwy.github.io/week8/homework2.html" target="_new">
+                        <h4>AUDIO</h4>
+                    </a>
+                </div>
             </div>
             <div class="rightheader">
                 <div class="elementContainer">
@@ -555,9 +578,9 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="">Home</a></li>
+                <li><a href="https://tehwy.github.io/week8/homework1.html" target="_new">Home</a></li>
                 <li><a href="">Learn</a></li>
-                <li><a href="">Listen</a></li>
+                <li><a href="https://tehwy.github.io/week8/homework2.html" target="_new">Listen</a></li>
             </ul>
             <label>
                 <input type="checkbox" name="">
