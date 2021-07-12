@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <title>Audio</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/audio.css">
+<style>
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b7216d1760.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.bar').click(function () {
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logoimg">
+                <h1>L</h1>
+            </div>
+            <div class="name">
+                <h4>LOGO<span>HERE</span></h4>
+            </div>
+        </div>
+        <div class="header">
+            <div id="leftheader">
+                <div id="home">
+                    <a class="noselected" href="https://tehwy.github.io/week8/homework1.html" target="_new">
+                        <h4>HOME</h4>
+                    </a>
+                </div>
+                <div id="article">
+                    <a  class="noselected" href="https://tehwy.github.io/week7/homework2.html" target="_new">
+                        <h4>ARTICLES</h4>
+                    </a>
+                </div>
+                <div id="audio">
+                    <a class="selected" href="https://tehwy.github.io/week7/homework2.html" target="_new">
+                        <h4>AUDIO</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="rightheader">
+                <div class="elementContainer">
+                    <i class="fas fa-search" id="search"></i>
+                    <input type="text" placeholder="Search" class="search">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="leftcontent">
+                <div class="box1">
+                    <img src="audio/songimage.png">
+                    <div id="songcontent">
+                        <h1>New Rules</h1>
+                        <h2>by John Doe</h2>
+                        <h3>Show : Coffe break</h3>
+                        <div class="buttonbox">
+                            <div id="addbutton">
+                                <i class="fas fa-plus"></i>
+                                <p>Add to Playlist</p>
+                            </div>
+                            <div id="downloadbutton">
+                                <i class="fas fa-long-arrow-alt-down"></i>
+                                <p>Download All</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="songlistbox">
+                    <div class="songbox">
+                        <div class="songtitle">
+                            <i class="far fa-play-circle"></i>
+                            <p>Let's talk</p>
+                        </div>
+                        <div class="songtime">
+                            <i class="fas fa-long-arrow-alt-down"></i>
+                            <p>30:43</p>
+                        </div>
+                    </div>
+                    <div class="songbox">
+                        <div class="songtitle">
+                            <div id="pause"><i class="fas fa-pause-circle"></i></div>
+                            <p>New rules</p>
+                        </div>
+                        <div class="songtime">
+                            <i class="fas fa-long-arrow-alt-down"></i>
+                            <p>13:48</p>
+                        </div>
+                    </div>
+                    <div class="songbox">
+                        <div class="songtitle">
+                            <i class="far fa-play-circle"></i>
+                            <p>My life</p>
+                        </div>
+                        <div class="songtime">
+                            <i class="fas fa-long-arrow-alt-down"></i>
+                            <p>10:43</p>
+                        </div>
+                    </div>
+                    <div class="songbox">
+                        <div class="songtitle">
+                            <i class="far fa-play-circle"></i>
+                            <p>Hatin On The Club</p>
+                        </div>
+                        <div class="songtime">
+                            <i class="fas fa-long-arrow-alt-down"></i>
+                            <p>4:59</p>
+                        </div>
+                    </div>
+                    <div class="songbox">
+                        <div class="songtitle">
+                            <i class="far fa-play-circle"></i>
+                            <p>Trust In Me</p>
+                        </div>
+                        <div class="songtime">
+                            <i class="fas fa-long-arrow-alt-down"></i>
+                            <p>11:00</p>
+                        </div>
+                    </div>
+                    <div class="songbox">
+                        <div class="songtitle">
+                            <i class="far fa-play-circle"></i>
+                            <p>Bad Girl</p>
+                        </div>
+                        <div class="songtime">
+                            <i class="fas fa-long-arrow-alt-down"></i>
+                            <p>20:43</p>
+                        </div>
+                    </div>
+                    <div class="songbox">
+                        <div class="songtitle">
+                            <i class="far fa-play-circle"></i>
+                            <p>Live Your Life</p>
+                        </div>
+                        <div class="songtime">
+                            <i class="fas fa-long-arrow-alt-down"></i>
+                            <p>12:43</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="rightcontent">
+                <div class="rightcontentboxupside">
+                    <div class="boxupsideimg">
+                        <div class="wordbox">
+                            <h1>BE POSTIIVE</h1>
+                        </div>
+                    </div>
+                    <div class="boxupsidecontent">
+                        <div class="aboutshow">
+                            <h3>ABOUT SHOW</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries.</p>
+                        </div>
+                        <div class="nextepisode">
+                            <div id="expisodebox1">
+                                <h3>NEXT EPISODE</h3>
+                                <p>Every Monday, 7:00 o'clock</p>
+                            </div>
+                            <div id="expisodebox2">
+                                <i class="fas fa-plus"></i>
+                                <p>Add to Playlist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightcontentboxbelow">
+                    <div class="boxbelow1">
+                        <div class="boxbelow1img"></div>
+                        <div class="boxbelowcontent">
+                            <div class="belowcontent1">
+                                <h3>TITLE - SHOW</h3>
+                                <p>Tought meeting today?</p>
+                            </div>
+                            <div class="belowcontent2">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxbelow2">
+                        <div class="boxbelow2img"></div>
+                        <div class="boxbelowcontent">
+                            <div class="belowcontent1">
+                                <h3>TITLE - SHOW</h3>
+                                <p>Feeling frazzled?</p>
+                            </div>
+                            <div class="belowcontent2">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxbelow3">
+                        <div class="boxbelow3img"></div>
+                        <div class="boxbelowcontent">
+                            <div class="belowcontent1">
+                                <h3>TITLE - SHOW</h3>
+                                <p>Feeling frazzled?</p>
+                            </div>
+                            <div class="belowcontent2">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="musicplayfooter">
+                <div class="footerleft">
+                    <div class="playicon">
+                        <div id="previous"><i class="fas fa-step-backward"></i></div>
+                        <div id="play"><i class="far fa-play-circle"></i></div>
+                        <div id="next"><i class="fas fa-step-forward"></i></div>
+                    </div>
+                </div>
+                <div class="songplaying">
+                    <p>New rules - Show</p>
+                    <div class="bar">
+                        <div class="yellowbar"></div>
+                        <div class="whitebar"></div>
+                    </div>
+                </div>
+                <div class="footeright">
+                    <p>3:48</p>
+                    <i class="fas fa-volume-up"></i>
+                    <i class="fas fa-long-arrow-alt-down"></i>
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <div class="elementContainer_1">
+                    <div class="searchbox">
+                        <i class="fas fa-search" id="logosearch"></i>
+                        <input type="text" placeholder="Search" class="search_1">
+                    </div>
+                </div>
+            </li>
+            <li><a href="https://tehwy.github.io/week8/homework1.html" target="_new">Home</a></li>
+            <li><a href="https://tehwy.github.io/week7/homework2.html" target="_new">Learn</a></li>
+            <li><a href="">Listen</a></li>
+        </ul>
+        <label>
+            <input type="checkbox" name="">
+            <div class="bar">
+                <span class="linetop"></span>
+                <span class="linemiddle"></span>
+                <span class="linebottom"></span>
+            </div>
+        </label>
+        <div class="logo2">
+            <div class="logoimg2">
+                <h1>L</h1>
+            </div>
+        </div>
+        <div id="bell"><i class="fas fa-bell"></i></div>
+    </nav>
+    <div class="phonecontainer">
+        <div class="songdetails">
+            <div class="songtitlephone">
+                <img src="audio/songimage.png">
+                <h1>New Rules</h1>
+                <h3>by John Doe</h3>
+                <p>Show : Coffe break</p>
+            </div>
+            <div class="buttonboxphone">
+                <div id="addbuttonphone">
+                    <i class="fas fa-plus"></i>
+                    <p>Add to Playlist</p>
+                </div>
+                <div id="downloadbuttonphone">
+                    <i class="fas fa-long-arrow-alt-down"></i>
+                    <p>Download All</p>
+                </div>
+            </div>
+            <div class="songphonebutton">
+                <div class="phonebutton1">
+                    <h4>AUDIO LIST</h4>
+                </div>
+                <div class="phonebutton2">
+                    <h4>LIBRARY</h4>
+                </div>
+                <div class="phonebutton3">
+                    <h4>RECOMMENDED</h4>
+                </div>
+            </div>
+        </div>
+        <div class="phonesonglist">
+            <div class="phonesongbox">
+                <div class="phonesongtitle">
+                    <h4>Audio Title</h4>
+                    <p>Author</p>
+                </div>
+                <div class="phoneosongbutton">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="phonesongbox">
+                <div class="phonesongtitle">
+                    <h4>Audio Title</h4>
+                    <p>Author</p>
+                </div>
+                <div class="phoneosongbutton">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="phonesongbox">
+                <div class="phonesongtitle">
+                    <h4>Audio Title</h4>
+                    <p>Author</p>
+                </div>
+                <div class="phoneosongbutton">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="phonesongbox">
+                <div class="phonesongtitle">
+                    <h4>Audio Title</h4>
+                    <p>Author</p>
+                </div>
+                <div class="phoneosongbutton">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="phonesongbox">
+                <div class="phonesongtitle">
+                    <h4>Audio Title</h4>
+                    <p>Author</p>
+                </div>
+                <div class="phoneosongbutton">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+        </div>
+        <div class="phonefooter">
+            <div class="phonefootercontainer">
+                <div class="phonefooterleft">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+                <div class="phonefootermiddle">
+                    <h3>Audio Title • <span>Artist</span></h3>
+                </div>
+                <div class="phonefooterright">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
