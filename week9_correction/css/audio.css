@@ -385,10 +385,6 @@ nav {
         margin-top: 50px;
     }
 
-    .header{
-        margin: 10px;
-    }
-
 }
 
 @media screen and (max-width: 800px) {
