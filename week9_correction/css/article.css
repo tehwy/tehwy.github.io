@@ -5,29 +5,42 @@
     background-repeat: no-repeat;
 }
 
-.content {
+.content{
     display: flex;
     position: relative;
 }
 
-.leftcontent {
-    margin-right: 40px;
+.leftcontent{
+    margin-right: 35px;
+    position: relative;
 }
 
-#contentphoto {
+#contentphoto{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
 }
 
-#contentphoto img {
+#contentphoto img{
     margin-right: 20px;
 }
 
-.more {
-    position: absolute;
-    right: 0;
-    top: 0;
+#maincontent h2{
+    font-size: 35px;
+    line-height: 0.5em;
+    color: #303336;
 }
+
+#maincontent p{
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+.more{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 
 .bottom {
     display: flex;
@@ -163,8 +176,7 @@ nav {
 @media screen and (max-width: 800px) {
     .container {
         margin: 0;
-        padding-left:0 ;
-        padding-right: 0;
+        padding: 0;
     }
 
     nav {
@@ -358,6 +370,7 @@ nav {
         flex-direction: column;
         position: relative;
         top: 45px;
+        z-index: -1;
     }
 
     .contentphotophone img {
@@ -390,6 +403,7 @@ nav {
     }
 
     .bottom>div {
+        z-index: -1;
         flex-wrap: wrap;
         margin: 10px;
     }
@@ -397,4 +411,5 @@ nav {
     .bottom .lastbox {
     margin-left: 0;
 }
+
 }
