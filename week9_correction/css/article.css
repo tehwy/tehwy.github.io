@@ -381,7 +381,6 @@ nav {
         flex-direction: column;
         position: relative;
         top: 45px;
-        z-index: -1;
     }
 
     .contentphotophone img {
