@@ -1,6 +1,8 @@
 body{
     max-width: 1280px;
     margin: auto;
+    background-image: url(../image/backgorund.png);
+    background-size: cover;
 }
 
 .logo {
@@ -47,6 +49,8 @@ body{
     display: flex;
     position: relative;
     bottom: 100px;
+    text-align: center;
+    justify-content: center;
 }
 
 .header p1{
