@@ -1,5 +1,5 @@
 .bgimg{
-    background-image: url(../home/backgorund.png);
+    background-image: url(../home/backgorund.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -310,7 +310,7 @@ nav {
 
     .phonebackground {
         display: block;
-        background-image: url(../home/phonebackground1.png);
+        background-image: url(../home/phonebackground1.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
