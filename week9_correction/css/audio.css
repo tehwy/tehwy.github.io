@@ -1,3 +1,10 @@
+.bgimg{
+    background-image: url(../article/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .content {
     margin-bottom: 100px;
     display: flex;
