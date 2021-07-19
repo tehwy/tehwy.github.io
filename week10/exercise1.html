@@ -7,128 +7,93 @@
 <head>
     <title>Week10_Exercise1</title>
     <style>
-        .logo {
-            grid-area: logo;
-        }
-
-        .menu {
-            grid-area: menubar;
-        }
-
-        .image {
-            grid-area: image;
-        }
-
-        .feat1 {
-            grid-area: feat1;
-        }
-
-        .feat2 {
-            grid-area: feat2;
-        }
-
-        .feat3 {
-            grid-area: feat3;
-        }
-
-        .sidebar {
-            grid-area: sidebar;
-        }
-
-        .content1{
-            grid-area: content1;
-        }
-
-        .content2{
-            grid-area: content2;
-        }
-
-        .content3{
-            grid-area: content3;
-        }
-
-        .content4{
-            grid-area: content4;
-        }
-
-        .textcontent {
-            grid-area: contenttext;
-            display: grid;
-            grid-template-areas:
-            'content1 content2'
-            'content3 content4';
-        }
-
-        .textcontent img{
-            width: 50%;
-        }
-
-
-        .footer {
-            grid-area: footer;
-        }
-
-
-        .grid-container {
-            display: grid;
-            grid-template-areas:
-                'logo logo logo logo menubar menubar menubar menubar menubar'
+         .logo { grid-area: logo; }
+            .menu { grid-area: menu; }
+            .image { grid-area: image; }
+            .feat1 { grid-area: feat1; }
+            .feat2 { grid-area: feat2; }
+            .feat3 { grid-area: feat3; }
+            .sidebar { grid-area: sidebar; }
+            .text { grid-area: text; }
+            .textimage { grid-area: textimage; }
+            .footer { grid-area: footer; }
+            .image1 { grid-area: image1; }
+            .image2 { grid-area: image2; }
+            .image3 { grid-area: image3; }
+            .image4 { grid-area: image4; }
+            
+        
+            .container{
+                display: grid;
+                grid: 
+                'logo logo logo logo menu menu menu menu menu'
                 'image image image image image image image image image'
                 'feat1 feat1 feat1 feat2 feat2 feat2 feat3 feat3 feat3'
-                'sidebar sidebar sidebar sidebar contenttext contenttext contenttext contenttext contenttext'
+                'sidebar sidebar sidebar sidebar text text text text text'
                 'footer footer footer footer footer footer footer footer footer';
-            grid-gap: 10px;
-            background-color: #2196F3;
-            padding: 10px;
-        }
-
-        .grid-container>div {
-            background-color: rgba(255, 255, 255, 0.8);
-            text-align: center;
-            padding: 20px 0;
-            font-size: 25px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .textcontent {
-            grid-template-areas:
-            'content1'
-            'content2'
-            'content3'
-            'content4';
-        }
-            .grid-container {
-                grid-template-areas:
-                    'logo  logo menubar menubar menubar menubar'
-                    'image image image image image image'
-                    'feat1 feat1  feat1 feat2 feat2 feat2'
-                    'feat3 feat3 feat3 feat3 feat3 feat3' 
-                    'sidebar sidebar sidebar sidebar sidebar sidebar'
-                    'contenttext contenttext contenttext contenttext contenttext contenttext'
-                    'footer footer footer footer footer footer' ;
+                grid-gap: 10px;
+                background-color: #2196F3;
+                padding: 10px;
             }
-        }
+
+            .container > div{
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+            }
+
+            .textimage{
+                display: grid;
+                grid: 
+                'image1 image2'
+                'image3 image4';
+            }
+
+
+            @media screen and (max-width: 600px) {
+                .container{
+                    grid: 
+                    'logo logo menu menu menu menu'
+                    'image image image image image image'
+                    'feat1 feat1 feat1 feat2 feat2 feat2'
+                    'feat3 feat3 feat3 feat3 feat3 feat3'
+                    'sidebar sidebar sidebar sidebar sidebar sidebar'
+                    'text text text text text text'
+                    'footer footer footer footer footer footer';
+                }
+            }
     </style>
 </head>
 
 <body>
-    <div class="grid-container">
+    <div class="container"> 
         <div class="logo">LOGO</div>
         <div class="menu">MENU</div>
-        <div class="image">IMAGE SLIDESHOW</div>
+        <div class="image">IMAGE SLIDE SHOW</div>
         <div class="feat1">FEAT 1</div>
         <div class="feat2">FEAT 2</div>
         <div class="feat3">FEAT 3</div>
         <div class="sidebar">SIDEBAR</div>
-        <div class="textcontent">
-            <div class="content1"><img src="image/square image.png"></div>
-            <div class="content2"><img src="image/square image.png"></div>
-            <div class="content3"><img src="image/square image.png"></div>
-            <div class="content4"><img src="image/square image.png"></div>
+        <div class="text">
+            <div class="textimage">
+                <div class="image1">
+                    <img src="image/square image2.png">
+                </div>
+                <div class="image2">
+                    <img src="image/square image2.png">
+                </div>
+                <div class="image3">
+                    <img src="image/square image2.png">
+                </div>
+                <div class="image4">
+                    <img src="image/square image2.png">
+                </div>
+            </div>
         </div>
-
         <div class="footer">FOOTER</div>
     </div>
+    
 </body>
 
 </html>
