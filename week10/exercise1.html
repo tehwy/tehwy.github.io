@@ -32,9 +32,34 @@
             grid-area: sidebar;
         }
 
-        .text {
-            grid-area: contenttext;
+        .content1{
+            grid-area: content1;
         }
+
+        .content2{
+            grid-area: content2;
+        }
+
+        .content3{
+            grid-area: content3;
+        }
+
+        .content4{
+            grid-area: content4;
+        }
+
+        .textcontent {
+            grid-area: contenttext;
+            display: grid;
+            grid-template-areas:
+            'content1 content2'
+            'content3 content4';
+        }
+
+        .textcontent img{
+            width: 50%;
+        }
+
 
         .footer {
             grid-area: footer;
@@ -58,10 +83,17 @@
             background-color: rgba(255, 255, 255, 0.8);
             text-align: center;
             padding: 20px 0;
-            font-size: 30px;
+            font-size: 25px;
         }
 
         @media only screen and (max-width: 600px) {
+            .textcontent {
+            grid-template-areas:
+            'content1'
+            'content2'
+            'content3'
+            'content4';
+        }
             .grid-container {
                 grid-template-areas:
                     'logo  logo menubar menubar menubar menubar'
@@ -85,7 +117,13 @@
         <div class="feat2">FEAT 2</div>
         <div class="feat3">FEAT 3</div>
         <div class="sidebar">SIDEBAR</div>
-        <div class="text">TEXT CONTENT</div>
+        <div class="textcontent">
+            <div class="content1"><img src="image/square image.png"></div>
+            <div class="content2"><img src="image/square image.png"></div>
+            <div class="content3"><img src="image/square image.png"></div>
+            <div class="content4"><img src="image/square image.png"></div>
+        </div>
+
         <div class="footer">FOOTER</div>
     </div>
 </body>
