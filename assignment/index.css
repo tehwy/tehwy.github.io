@@ -1,0 +1,405 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.home {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header .logo {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.header ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header ul li a:hover {
+    background-color: #6D6D6D;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    z-index: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.caption h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    display: none;
+}
+
+.caption.active h1 {
+    opacity: 0;
+    animation: captionText .5s ease forwards;
+    animation-delay: 1s;
+    display: block;
+}
+
+.caption h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 10px 0;
+    display: none;
+}
+
+.caption.active h3 {
+    opacity: 0;
+    animation: captionText .5s ease forwards;
+    animation-delay: 1.2s;
+    display: block;
+}
+
+.caption h2 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 30px;
+    color: white;
+    display: none;
+    margin: 0;
+}
+
+.caption.active h2 {
+    opacity: 0;
+    animation: captionText .5s ease forwards;
+    animation-delay: 1.2s;
+    display: block;
+}
+
+@keyframes captionText {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.controls {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    padding-left: 10px;
+}
+
+.controls .prev i,
+.controls .next i {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #9A9A9A;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.controls .prev {
+    margin-right: 20px;
+}
+
+.footericon {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    padding-right: 10px;
+}
+
+.footericon .weiboicon i,
+.footericon .tiktokicon i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.footericon .tiktokicon i {
+    margin-left: 20px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    padding: 0 15px;
+    animation: slide 2s ease;
+}
+
+.slide.active {
+    display: flex;
+}
+
+@keyframes slide {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+nav {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        display: none;
+    }
+
+    .controls{
+        display: none;
+    }
+
+    .phonelogo h1 {
+        padding-left: 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+
+    }
+
+    nav {
+        background-color: white;
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+    }
+
+    input[type="checkbox"] {
+        visibility: hidden;
+        display: none;
+    }
+
+    .bar {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+    }
+
+    .bar .linemiddle {
+        height: 6px;
+        width: 35px;
+        background-color: #A4AFB7;
+        border-radius: 10px;
+        position: absolute;
+        right: 10px;
+        transition: 0.3s ease;
+    }
+
+    .bar .linetop {
+        bottom: 5px;
+        height: 6px;
+        width: 35px;
+        background-color: #A4AFB7;
+        border-radius: 10px;
+        position: absolute;
+        right: 10px;
+        transition: 0.3s ease;
+    }
+
+    .bar .linebottom {
+        top: 10px;
+        height: 6px;
+        width: 35px;
+        background-color: #A4AFB7;
+        border-radius: 10px;
+        position: absolute;
+        right: 10px;
+        transition: 0.3s ease;
+    }
+
+    input[type="checkbox"]:checked~.bar .linetop {
+        transform: rotate(-45deg);
+        width: 30px;
+        right: 20px;
+        transform-origin: right;
+    }
+
+    input[type="checkbox"]:checked~.bar .linebottom {
+        transform: rotate(45deg);
+        width: 30px;
+        transform-origin: left;
+        right: 12px;
+        top: -11px;
+    }
+
+    input[type="checkbox"]:checked~.bar .linemiddle {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        background: #F3F3F3;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+        list-style: none;
+
+    }
+
+    nav a ,
+    nav h2{
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        font-family: 'Noto Serif SC', serif;
+        font-weight: bold;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        border-bottom: 4px solid #6D6D6D;
+   }
+
+    nav ul.show {
+        left: 0;
+    }
+
+    .caption {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    z-index: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.caption.active{
+    justify-content: center;
+    background-color: rgba(184, 184, 184, 0.6);
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 0px 30px ;
+    min-width: 230px;
+    min-height: 180px;
+}
+
+
+.caption h1{
+    font-size: 50px;
+    padding-left: 10px;
+}
+
+.caption h2{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.caption h3{
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.phoneicon,
+nav h2{
+    display: none;
+}
+
+}
+
+@media screen and (max-width:680px){
+    nav h2{
+        display: block;
+    }
+
+    .phoneicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.phoneicon i{
+    font-size: 20px;
+}
+
+.footericon{
+    display: none;
+}
+
+.phoneicon a i{
+    text-decoration: none;
+}
+
+}

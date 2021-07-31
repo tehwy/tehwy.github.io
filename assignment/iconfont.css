@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1627652686948') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size:20px;
+  color: white;
+  margin-left: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}
+
+.iconfontphone {
+  font-family: "iconfont" !important;
+  font-size:22px;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+.icon-jiantou:before {
+  content: "\e64e";
+}
+
+.icon-weibo:before {
+  content: "\e608";
+}
+
