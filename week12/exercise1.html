@@ -19,7 +19,7 @@
             padding-right: 10px;
         }
 
-        .topnav{
+        .topnav {
             display: flex;
             justify-content: space-between;
             margin-top: 10px;
@@ -29,14 +29,20 @@
             font-size: 30px;
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
+            text-decoration: none;
+            color: black;
         }
 
-        .nav {
+        .icon {
+            display: none;
+        }
+
+        .nav #myLinks {
             display: flex;
             align-items: center;
         }
 
-        .nav>a {
+        .nav #myLinks>a {
             text-decoration: none;
             font-family: 'Noto Serif SC', serif;
             font-size: 20px;
@@ -47,7 +53,7 @@
             padding-right: 10px;
         }
 
-        .nav a:hover {
+        .nav #myLinks a:hover {
             background-color: #6D6D6D;
             color: white;
         }
@@ -62,7 +68,7 @@
             text-align: center;
         }
 
-        .dropdown>a{
+        .dropdown>a {
             text-decoration: none;
             font-family: 'Noto Serif SC', serif;
             font-size: 20px;
@@ -74,7 +80,7 @@
 
         }
 
-        .dropdowncontent a{
+        .dropdowncontent a {
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
             font-size: 20px;
@@ -84,19 +90,13 @@
             padding-top: 10px;
         }
 
-        .dropdown:hover .dropdowncontent{
+        .dropdown:hover .dropdowncontent {
             display: flex;
             flex-direction: column;
         }
 
-        .mobilenav {
-            display: none;
-        }
 
         @media screen and (max-width: 700px) {
-            .topnav {
-                display: none;
-            }
 
             body {
                 margin: none;
@@ -104,69 +104,70 @@
                 padding-right: 0;
             }
 
-            .mobilenav {
+            .topnav {
                 display: block;
             }
 
-            .mobilenav {
-                background-color: white;
+            .nav #myLinks {
+                display: none;
+                width: 100%;
+                background-color: gray;
             }
 
             .mobiletop {
                 display: flex;
-                align-items: center;
                 justify-content: space-between;
-            }
-
-            .mobilelogo {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: bold;
-                text-align: left;
-                font-size: 28px;
-            }
-
-            .mobilenav #myLinks {
-                display: none;
-                background-color: #A4AFB7;
-                text-align: center;
-            }
-
-            .mobilenav #mylinks a {
-                font-size: 17px;
-            }
-
-            .mobilenav a {
-                color: black;
-                padding: 14px 16px;
-                text-decoration: none;
-                display: block;
-                font-weight: bold;
-            }
-
-            .mobilelogo a.icon {
-                display: block;
-                position: absolute;
-                font-size: 25px;
-                right: 0;
-                top: 0;
-            }
-
-            .mobilenav a:hover {
-                background-color: #ddd;
-                color: black;
-            }
-
-            .active {
-                background-color: black;
-                color: white;
-            }
-
-            .mobilenav a.active {
-                color: white;
+                align-items: center;
+                padding-left: 10px;
+                padding-right: 10px;
             }
 
             .icon {
-                font-size: 30px;
+                display: block;
+                color: black;
+                font-size: 25px;
+            }
+            
+
+            .nav #myLinks>a {
+                display: block;
+                text-align: center;
+                padding: none;
+            }
+
+            .dropdown {
+                text-align: center;
+            }
+            
+
+            .dropdowncontent {
+                text-align: center;
+            }
+
+            .dropdown>a {
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                margin-left: 0px;
+            }
+
+            .dropdown>a:hover{
+                background-color: none;
+            }
+
+            .nav #myLinks>a {
+                margin-left: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .dropdowncontent {
+                position: unset;
+                background-color: white;
+                width: 100%;
             }
 
         }
@@ -174,9 +175,17 @@
 </head>
 
 <body>
+
     <div class="topnav">
-        <div class="logo">SMY</div>
+        <div class="mobiletop">
+            <a href="#home" class="logo">SMY</a>
+            <a href="javascript:void(0);" class="icon" onclick="mobilenavfunction()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+
         <div class="nav">
+            <div id="myLinks">
             <a href="">首页</a>
             <a href="">关于</a>
             <div class="dropdown">
@@ -189,30 +198,11 @@
                     <a href="">LINK 3</a>
                 </div>
             </div>
-
-
             <a href="">行程</a>
             <a href="">应援会</a>
+            </div>
         </div>
     </div>
-
-    <div class="mobilenav">
-        <div class="mobiletop">
-            <a href="#home" class="mobilelogo">SMY</a>
-            <a href="javascript:void(0);" class="icon" onclick="mobilenavfunction()">
-                <i class="fas fa-bars"></i>
-            </a>
-        </div>
-
-        <div id="myLinks">
-            <a href="#home" class="active">首页</a>
-            <a href="#news">关于</a>
-            <a href="#contact">补档安利</a>
-            <a href="#gallery">行程</a>
-            <a href="#about">应援会</a>
-        </div>
-    </div>
-
 
     <script>
         function mobilenavfunction() {
@@ -224,7 +214,6 @@
             }
         }
     </script>
-
 </body>
 
 </html>
