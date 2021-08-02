@@ -19,12 +19,11 @@
             padding-right: 10px;
         }
 
-        .topnav {
+        .topnav{
             display: flex;
             justify-content: space-between;
             margin-top: 10px;
         }
-
 
         .logo {
             font-size: 30px;
@@ -32,20 +31,62 @@
             font-weight: bold;
         }
 
-        .nav a {
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav>a {
             text-decoration: none;
             font-family: 'Noto Serif SC', serif;
             font-size: 20px;
             font-weight: bold;
             color: black;
             margin-left: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         .nav a:hover {
             background-color: #6D6D6D;
+            color: white;
+        }
+
+        .dropdowncontent {
+            background-color: grey;
+            display: none;
+            position: absolute;
+            width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .dropdown>a{
+            text-decoration: none;
+            font-family: 'Noto Serif SC', serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            margin-left: 30px;
             padding-left: 10px;
             padding-right: 10px;
-            color: white;
+
+        }
+
+        .dropdowncontent a{
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .dropdown:hover .dropdowncontent{
+            display: flex;
+            flex-direction: column;
         }
 
         .mobilenav {
@@ -71,7 +112,7 @@
                 background-color: white;
             }
 
-            .mobiletop{
+            .mobiletop {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -124,7 +165,7 @@
                 color: white;
             }
 
-            .icon{
+            .icon {
                 font-size: 30px;
             }
 
@@ -138,7 +179,18 @@
         <div class="nav">
             <a href="">首页</a>
             <a href="">关于</a>
-            <a href="">补档安利</a>
+            <div class="dropdown">
+                <a href="">补档安利
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdowncontent">
+                    <a href="">LINK 1</a>
+                    <a href="">LINK 2</a>
+                    <a href="">LINK 3</a>
+                </div>
+            </div>
+
+
             <a href="">行程</a>
             <a href="">应援会</a>
         </div>
