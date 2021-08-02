@@ -1,1 +1,123 @@
+body{
+    background-color: #F3F3F3;
+}
+
+.abouttitle{
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.abouttitle h1{
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 25px;
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px 70px;
+    box-shadow: 0 5px 20px #9A9A9A;
+}
+
+.aboutcontent{
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 700px;
+}
+
+.aboutmaincontent{
+    margin-top: 20px;
+    display: flex;
+}
+
+.aboutmaincontent>div{
+    position: relative;
+}
+
+.leftaboutcontent{
+    width: 40%;
+}
+
+.rightaboutcontent{
+    width: 60%;
+}
+
+.leftaboutcontent div{
+    background-color: #B8C6E0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 309px;
+    height: 500px;
+}
+
+
+.leftaboutcontent img{
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+
+
+.name{
+    display: flex;
+    align-items: baseline;
+}
+
+.name h1{
+    font-family: 'Noto Serif SC', serif;
+    font-size: 40px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.name h2{
+    font-family: 'Noto Serif SC', serif;
+    font-size: 20px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+}
+
+.detailstitle{
+    display: block;
+    width: 30%;
+}
+
+.detailscontant{
+    width: 70%;
+    display: block;
+    background-image: url(../about_image/h2logo.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.detailstitle h3,
+.detailscontant p{
+    font-size: 20px;
+    font-family: 'Noto Serif SC', serif;
+}
+
+.detailstitle h3{
+    font-weight: bolder;
+}
+
+.socialmedialogo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+}
+
+.socialmedialogo a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
 
