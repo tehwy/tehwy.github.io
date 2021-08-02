@@ -1,97 +1,172 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Exercise1</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://kit.fontawesome.com/b7216d1760.js" crossorigin="anonymous"></script>
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b7216d1760.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            max-width: 1280px;
+            margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
-}
+        .topnav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-}
 
-.topnav #myLinks {
-    text-align: center;
-  display: none;
-}
+        .logo {
+            font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
 
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
+        .nav a {
+            text-decoration: none;
+            font-family: 'Noto Serif SC', serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            margin-left: 30px;
+        }
 
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+        .nav a:hover {
+            background-color: #6D6D6D;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: white;
+        }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+        .mobilenav {
+            display: none;
+        }
 
-.active {
-  background-color: #04AA6D;
-  color: white;
-}
-</style>
+        @media screen and (max-width: 700px) {
+            .topnav {
+                display: none;
+            }
+
+            body{
+                margin: none;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .mobilenav {
+            display: block;
+        }
+
+            .mobilenav {
+                background-color: white;
+            }
+
+            .mobiletop a{
+                display: flex;
+                align-items: center;
+            }
+
+            .mobilelogo {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                text-align: left;
+                font-size: 23px;
+            }
+
+            .mobilenav #myLinks {
+                display: none;
+                background-color: #A4AFB7;
+                text-align: center;
+            }
+
+            .mobilenav #mylinks a{
+                font-size: 17px;
+            }
+
+            .mobilenav a {
+                color: black;
+                padding: 14px 16px;
+                text-decoration: none;
+                display: block;
+                font-weight: bold;
+            }
+
+            .mobilenav a.icon {
+                display: block;
+                position: absolute;
+                font-size: 25px;
+                right: 0;
+                top: 0;
+            }
+
+            .mobilenav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .active {
+                background-color: black;
+                color: white;
+            }
+
+            .mobilenav a.active{
+                color: white;
+            }
+
+        }
+    </style>
 </head>
+
 <body>
+    <div class="topnav">
+        <div class="logo">SMY</div>
+        <div class="nav">
+            <a href="">首页</a>
+            <a href="">关于</a>
+            <a href="">补档安利</a>
+            <a href="">行程</a>
+            <a href="">应援会</a>
+        </div>
+    </div>
 
-<div class="mobile-container">
+    <div class="mobilenav">
+        <div class="mobiletop">
+            <a href="#home" class="mobilelogo">SMY</a>
+        <a href="javascript:void(0);" class="icon" onclick="mobilenavfunction()">
+            <i class="fas fa-bars"></i>
+        </a> 
+        </div>
+       
+        <div id="myLinks">
+            <a href="#home" class="active">首页</a>
+            <a href="#news">关于</a>
+            <a href="#contact">补档安利</a>
+            <a href="#gallery">行程</a>
+            <a href="#about">应援会</a>
+        </div>
+    </div>
 
-<div class="topnav">
-  <a href="#home">LOGO</a>
-  <div id="myLinks">
-    <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About</a>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="topnavfunction()">
-    <i class="fas fa-bars"></i>
-  </a>
-</div>
 
-<div style="padding-left:16px">
-  <h3>Vertical Mobile Navbar</h3>
-  <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
-  <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
-</div>
-
-</div>
-
-<script>
-function topnavfunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+    <script>
+        function mobilenavfunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 
 </body>
+
 </html>
