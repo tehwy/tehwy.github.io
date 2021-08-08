@@ -897,7 +897,7 @@ html{
   }
   .row-1 section .icon{
     top: 15px;
-    right: -px;
+    right: -60px;
   }
   .row-2 section .icon{
     top: 15px;
@@ -1021,6 +1021,11 @@ html{
     position: absolute;
     top: 70px;
     right: 10px;
+    box-shadow: 0 5px 10px #9A9A9A;
+  }
+
+  .tablettheaterbutton a{
+    color: black;
   }
   
   .tablettheaterbox{
@@ -1234,6 +1239,46 @@ html{
 .tablettheaterbox{
   margin-top: 30px;
 }
+
+.tablettheaterbox::-webkit-scrollbar {
+  height: 15px;
+}
+
+.tablettheaterbox::-webkit-scrollbar-thumb{
+  background: white;
+  border-radius: 10px;
+}
+
+.tablettheaterbox::-webkit-scrollbar-track {
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+}
+
+.theaterimagebox{
+  margin-bottom: 20px;
+}
+
+.phonethreater {
+  border-bottom: 5px dashed #DBDBDB;
+  margin-bottom: 30px;
+
+}
+
+.tablettheaterimagebox::-webkit-scrollbar {
+  height: 15px;
+}
+
+.tablettheaterimagebox::-webkit-scrollbar-thumb{
+  background: white;
+  border-radius: 10px;
+}
+
+.tablettheaterimagebox::-webkit-scrollbar-track {
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+}
+
+
 
 .mySlides {
   display: none;
