@@ -531,6 +531,10 @@ body{
     margin-right: 10px;
 }
 
+.theaterbutton a{
+  color: black;
+}
+
 table {
     width:100%;
     position: relative;
@@ -893,7 +897,7 @@ html{
   }
   .row-1 section .icon{
     top: 15px;
-    right: -58px;
+    right: -px;
   }
   .row-2 section .icon{
     top: 15px;
