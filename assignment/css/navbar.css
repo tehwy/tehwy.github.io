@@ -9,16 +9,21 @@ body{
     box-shadow: 0 5px 20px #9A9A9A;
     height: 60px;
     width: 100%;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 999999;
 }
 
 .container {
     max-width: 1280px;
-    margin: 0 auto;
-    height: 100vh;
+    margin: auto;
     position: relative;
 }
 
 .header {
+    max-width: 1260px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,13 +97,13 @@ nav {
         box-shadow: 0 5px 20px #9A9A9A;
         height: 50px;
         width: 100%;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        z-index: 100;
+        z-index: 99999;
     }
 
     input[type="checkbox"] {
@@ -202,28 +207,36 @@ nav {
         left: 0;
     }
 
+    .phoneicon,
     nav h2{
-        display: block;
+        display: none;
     }
-
-    .phoneicon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.phoneicon i{
-    font-size: 20px;
-}
-
-.footericon{
-    display: none;
-}
-
-.phoneicon a i{
-    text-decoration: none;
-}
-
-}
+    
+    }
+    
+    @media screen and (max-width:680px){
+        nav h2{
+            display: block;
+        }
+    
+        .phoneicon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .phoneicon i{
+        font-size: 20px;
+    }
+    
+    .footericon{
+        display: none;
+    }
+    
+    .phoneicon a i{
+        text-decoration: none;
+    }
+    
+    }

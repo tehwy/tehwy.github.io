@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-
+<html>
 <head>
     <title>About</title>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/about.css">
-    <style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
@@ -15,7 +27,6 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/b7216d1760.js" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
         $(document).ready(function () {
             $('.bar').click(function () {
@@ -24,33 +35,400 @@
         });
     </script>
     <link rel="stylesheet" href="iconfont.css">
-
+</head>
 <body>
     <div class="background">
         <div class="topnavbackground">
-            <div class="container">
-                <div class="header">
-                    <a href="https://tehwy.github.io/assignment/index.html" class="logo">SMY</a>
-               <ul>
-                   <li><a href="https://tehwy.github.io/assignment/about.html" class="active">关于</a></li>
-                   <li><a href="">补档安利</a></li>
-                   <li><a href="">行程</a></li>
-                   <li><a href="">应援会</a></li>
-               </ul> 
-           </div> 
-        <div class="aboutcontent">
-            <div class="abouttitle">
-                <h1>基本资料</h1>
+            <div class="header">
+                <a href="https://tehwy.github.io/assignment/index.html" class="logo">SMY</a>
+                <ul>
+                    <li><a href="https://tehwy.github.io/assignment/about.html" class="active">关于</a></li>
+                    <li><a href="">补档安利</a></li>
+                    <li><a href="">行程</a></li>
+                    <li><a href="">应援会</a></li>
+                </ul>
             </div>
-            <div class="aboutmaincontent">
-            <div class="leftaboutcontent">
-                <div></div>
-                <img src="about_image/img1.jpg" width="309px" height="500px">
+        </div>
+        <div class="container">
+            <div class="aboutcontent">
+                <div class="abouttitle">
+                    <h1>基本资料</h1>
+                </div>
+                <div class="aboutmaincontent">
+                    <div class="leftaboutcontent">
+                        <div></div>
+                        <img src="about_image/img1.jpg" width="309px" height="500px">
+                    </div>
+                    <div class="rightaboutcontent">
+                        <div class="name">
+                            <h1>沈梦瑶</h1>
+                            <h2>(SNH48 TEAM HII) 五期生</h2>
+                        </div>
+                        <div class="details">
+                            <div class="detailstitle">
+                                <h3>英文名</h3>
+                                <h3>昵称</h3>
+                                <h3>官方身高</h3>
+                                <h3>生日</h3>
+                                <h3>星座</h3>
+                                <h3>出生地</h3>
+                                <h3>所属公司</h3>
+                                <h3>亮相日期</h3>
+                            </div>
+                            <div class="detailscontant">
+                                <p>MIRANDA</p>
+                                <div class="description">
+                                    <p>瑶瑶</p>
+                                    <div class="description1">
+                                        <p>神喵</p>
+                                        <div class="description1content">
+                                            <h4>科普</h4>
+                                            <p>神喵是沈梦瑶念快后的谐音</p>
+                                        </div>
+                                    </div>
+                                    <div class="description2">
+                                        <p>萨摩耶</p>
+                                        <div class="description2content">
+                                            <h4>科普</h4>
+                                            <p>沈梦瑶=SMY=萨摩耶</p>
+                                        </div>
+                                    </div>
+                                    <div class="description3">
+                                        <p>阿拉瑶瑶</p>
+                                        <div class="description3content">
+                                            <h4>科普</h4>
+                                            <p>"阿拉"在上海话中是"我的"意思,一般使用者与被使用者关系亲密，以此来称呼瑶瑶也是代表着粉丝的喜爱</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>167</p>
+                                <p>1998.08.14</p>
+                                <p>狮子座</p>
+                                <p>中国上海</p>
+                                <p>上海丝芭文化传媒集团有限公司</p>
+                                <p>2015.07.25</p>
+                            </div>
+                        </div>
+                        <div class="socialmedialogo">
+                            <div class="weiboicon"><a href="https://weibo.com/u/5681945173" target="_new"><i
+                                        class="fab fa-weibo"></i></a></div>
+                            <a href="https://space.bilibili.com/6025671?from=search&seid=1400146411014535719"
+                                target="_new"><span class="iconfont2">&#xe7c8;</span></a>
+                            <div class="tiktokicon"><a
+                                    href="https://www.douyin.com/user/MS4wLjABAAAApP4cjq-eImt-LSBdZeDQMa6qMNJ6eXJgY18t4un7V2g"
+                                    target="_new"><i class="fab fa-tiktok"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="rightaboutcontent">
-                <div class="name">
-                    <h1>沈梦瑶</h1>
-                    <h2>(SNH48 TEAM HII)  五期生</h2>
+            <div class="ranking">
+                <div class="rankingtitle">
+                    <h1>历届总选排名</h1>
+                </div>
+                <div class="rankingintro">
+                    <h2>什么是总决选？</h2>
+                    <p>SNH48偶像年度人气总选举（又名SNH48偶像年度人气总决选）是以粉丝投票的方式确定
+                        SNH48 GROUP成员的人气排名，并以此来决定下一总选专辑的录制阵容的48系年度活动。
+                        总决选的结果将直接关系到成员在<span>下一年度所获得推广资源的力度</span>。</p>
+                </div>
+                <div class="timeline">
+                    <div id="timeline-bar-container">
+                        <ul>
+                            <li class="step step01 active">
+                                <div class="step-inner">2016</div>
+                            </li>
+                            <li class="step step02">
+                                <div class="step-inner">2017</div>
+                            </li>
+                            <li class="step step03">
+                                <div class="step-inner">2018</div>
+                            </li>
+                            <li class="step step04">
+                                <div class="step-inner">2019</div>
+                            </li>
+                            <li class="step step05">
+                                <div class="step-inner">2020</div>
+                            </li>
+                            <li class="step step06">
+                                <div class="step-inner">2021</div>
+                            </li>
+                        </ul>
+
+                        <div id="line">
+                            <div id="line-progress"></div>
+                        </div>
+                    </div>
+
+                    <div id="timeline-content-section">
+                        <div class="section-content 2016 active">
+                            <div class="section-content-text">
+                                <h2>2016</h2>
+                                <p>第三届总决选比翼齐飞<br><span>未进圈</span></p>
+                                <div class="contentvideo">
+                                    <div><a href="https://www.bilibili.com/video/BV14x41167Fy" target="_new">总选宣言</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-content-photo">
+                                <img src="about_image/ranking2016_1.jpg" width="221px" height="350px">
+                            </div>
+                        </div>
+
+                        <div class="section-content 2017">
+                            <div class="section-content-text">
+                                <h2>2017</h2>
+                                <p>第四届总决选我心翱翔<br><span>第65名</span></p>
+                                <div class="textbox">
+                                    <p>拉票发言：
+                                        <br>我的初心就是站在这个舞台上唱歌跳舞给你们看<br>
+                                        明明我没有学过舞蹈更没有学过唱歌，那么我怎么有那么大的兴趣站在舞台上呢？<br>
+                                        我想这个原因一定是你们正在看我的你们，正在注视着我的你们<br>
+                                        不管怎样，我站在何处，我都会认真努力的去跳绝不划水
+                                    </p>
+                                </div>
+                                <div class="contentvideo">
+                                    <div><a href="https://www.bilibili.com/video/BV17x41167vw?from=search&seid=17943912723551298235"
+                                            target="_new">总选宣言</a></div>
+                                    <div><a href="https://www.bilibili.com/video/BV1ox411671R" target="_new">拉票表演</a>
+                                    </div>
+                                    <div><a href="https://weibo.com/5649500068/FeES3yqOR" target="_new">得奖感言</a></div>
+                                </div>
+                            </div>
+                            <div class="section-content-photo">
+                                <img src="about_image/ranking2017_2.jpg" width="197px" height="350px">
+                            </div>
+                        </div>
+
+                        <div class="section-content 2018">
+                            <div class="section-content-text">
+                                <h2>2018</h2>
+                                <p>第五届总决选砥砺前行<br><span>第48名</span></p>
+                                <div class="textbox">
+                                    <p>拉票发言：
+                                        <br>不管是怎么样，只要我有站位，有站位那肯定会好好跳<br>
+                                        哪怕是和以前一样前面的人全是挡住了<br>
+                                        我也是会继续跳，然后不管你们看不看
+                                    </p>
+                                </div>
+                                <div class="contentvideo">
+                                    <div><a href="https://www.bilibili.com/video/BV1mW411N7Ze?from=search&seid=17943912723551298235"
+                                            target="_new">总选宣言</a></div>
+                                    <div><a href="https://www.bilibili.com/video/BV1QW411P7ZM" target="_new">拉票表演</a>
+                                    </div>
+                                    <div><a href="https://weibo.com/5649500068/Gs3kIhYFK" target="_new">得奖感言</a></div>
+                                </div>
+                            </div>
+                            <div class="section-content-photo">
+                                <img src="about_image/ranking2018 _1.jpg" width="307px" height="350px">
+                            </div>
+                        </div>
+
+                        <div class="section-content 2019">
+                            <div class="section-content-text">
+                                <h2>2019</h2>
+                                <p>第六届总决选新的旅程<br><span>第16名</span></p>
+                                <div class="textbox">
+                                    <p>拉票发言：
+                                        <br>不想辜负你们，不想辜负公司<br>
+                                        所以到现在我还能怀揣着一个炙热的心来面对舞台<br>
+                                        我也不后悔，把我的青春，我的所有，<br>
+                                        全都压在了那份不止8年的合同上
+                                    </p>
+                                </div>
+                                <div class="contentvideo">
+                                    <div><a href="https://www.bilibili.com/video/BV1r4411H7rZ?from=search&seid=17943912723551298235"
+                                            target="_new">总选宣言</a></div>
+                                    <div><a href="https://www.bilibili.com/video/BV14t411L7NB" target="_new">拉票表演</a>
+                                    </div>
+                                    <div><a href="https://www.bilibili.com/video/BV1it411w7uz" target="_new">得奖感言</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-content-photo">
+                                <img src="about_image/ranking2019.jpg" width="233px" height="350px">
+                            </div>
+                        </div>
+
+                        <div class="section-content 2020">
+                            <div class="section-content-text">
+                                <h2>2020</h2>
+                                <p>第七届总决选创造炙热的青春<br><span>第4名</span></p>
+                                <div class="textbox">
+                                    <p>拉票发言：
+                                        <br>我觉得呆在这里的每个人都是一个小疯子吧<br>
+                                        就是愿意为了自己心中那份多多少少的的执念<br>
+                                        对舞台的一份向往<br>都愿意不惜一切去拼搏，去努力练习
+                                    </p>
+                                </div>
+                                <div class="contentvideo">
+                                    <div><a href="https://www.bilibili.com/video/BV1L54y1q7ee?from=search&seid=17943912723551298235"
+                                            target="_new">总选宣言</a></div>
+                                    <div><a href="https://www.bilibili.com/video/BV1Xa4y1a7wK" target="_new">拉票表演</a>
+                                    </div>
+                                    <div><a href="https://www.bilibili.com/video/BV1vp4y1v7Kk?from=search&seid=10973833429689329471"
+                                            target="_new">得奖感言</a></div>
+                                </div>
+                            </div>
+                            <div class="section-content-photo">
+                                <img src="about_image/ranking2020.jpg" width="233px" height="350px">
+                            </div>
+                        </div>
+
+                        <div class="section-content 2021">
+                            <div class="section-content-text">
+                                <h2>2021</h2>
+                                <p>第八届总决选世界的48种可能<br><span>第3名</span></p>
+                                <div class="textbox">
+                                    <p>拉票发言：
+                                        <br>我不需要处处被夸奖，被所有人喜爱，但我想被给予期望<br>
+                                        我不渴求所遇皆坦途，但所有荆棘都会被我踩成脚下之路<br>
+                                        我不执著绝对的输赢，但我偏就要一直向上前行<br>
+                                        我不要求自己次次勇敢，但我不原谅自己每次的懦弱
+                                    </p>
+                                </div>
+                                <div class="contentvideo">
+                                    <div><a href="https://www.bilibili.com/video/BV1PV411x7E6?from=search&seid=17943912723551298235"
+                                            target="_new">总选宣言</a></div>
+                                    <div><a href="https://www.bilibili.com/video/BV14g411772D" target="_new">拉票表演</a>
+                                    </div>
+                                    <div><a href="" target="_new">得奖感言</a></div>
+                                </div>
+                            </div>
+                            <div class="section-content-photo">
+                                <img src="about_image/ranking2021.jpg" width="229px" height="350px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theater">
+                <div class="theatertitle">
+                    <h1>剧场公演</h1>
+                </div>
+                <div class="theaterintro">
+                    <p>剧场公演将于<span>每周四至日</span>在上海星梦剧院举行 <br>
+                        购票详情和安排将于<span>每周二在SNH48官方微博公布</span>。</p>
+                </div>
+                <div class="theaterbutton">
+                    官方购票网站
+                </div>
+                <table>
+                    <tr>
+                        <th>持续时间</th>
+                        <th>公演名称</th>
+                        <th>主Unit(以首演为主)</th>
+                        <th>视频链接</th>
+                    </tr>
+                    <tr>
+                        <td>2021.07.24 ~ 演出中</td>
+                        <td>《终极任务》</td>
+                        <td>《渊》 《In The Dark》</td>
+                        <td class="checkbutton"><span>查看</span></td>
+                    </tr>
+                    <tr>
+                        <td>2018.05.18 ~ 2021.07.11</td>
+                        <td>《头号新闻》</td>
+                        <td>《Cha Cha Cha》</td>
+                        <td class="checkbutton"><span>查看</span></td>
+                    </tr>
+                    <tr>
+                        <td>2017.04.08 ~ 2018.03.03</td>
+                        <td>《美丽世界》</td>
+                        <td>《对峙》</td>
+                        <td class="checkbutton"><span>查看</span></td>
+                    </tr>
+                    <tr>
+                        <td>2016.12.16 ~ 2017.04.01</td>
+                        <td>《十八个闪耀瞬间》</td>
+                        <td>——</td>
+                        <td class="checkbutton"><span>查看</span></td>
+                    </tr>
+                    <tr>
+                        <td>2016.03.26 ~ 2016.12.11</td>
+                        <td>《偶像黎明》</td>
+                        <td>——</td>
+                        <td class="checkbutton"><span>查看</span></td>
+                    </tr>
+                    <tr>
+                        <td>2015.05.29 ~ 2016.03.20</td>
+                        <td>《手牵手》</td>
+                        <td>——</td>
+                        <td class="checkbutton"><span>查看</span></td>
+                    </tr>
+
+                </table>
+
+                <div class="wrapper">
+                    <div class="carousel owl-carousel">
+                        <div class="card" id="c1"></div>
+                        <div class="card" id="c2"></div>
+                        <div class="card" id="c3"></div>
+                        <div class="card" id="c4"></div>
+                        <div class="card" id="c5"></div>
+                        <div class="card" id="c6"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://tehwy.github.io/assignment/index.html" >首页</a></li>
+                <li><a href="https://tehwy.github.io/assignment/about.html" class="active">关于</a></li>
+                <li><a href="">补档安利</a></li>
+                <li><a href="">行程</a></li>
+                <li><a href="">应援会</a></li>
+                <h2>沈梦瑶官方账号：</h2>
+                <div class="phoneicon">
+                    <a href="https://weibo.com/u/5681945173" target="_new"><i class="fab fa-weibo"></i></a>
+                    <a href="https://space.bilibili.com/6025671?from=search&seid=1400146411014535719"
+                        target="_new"><span class="iconfontphone">&#xe7c8;</span></a>
+                    <a href="https://www.douyin.com/user/MS4wLjABAAAApP4cjq-eImt-LSBdZeDQMa6qMNJ6eXJgY18t4un7V2g"
+                        target="_new"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </ul>
+            <div class="phonelogo">
+                <a href="https://tehwy.github.io/assignment/index.html">
+                    <h1>SMY</h1>
+                </a>
+            </div>
+            <label>
+                <input type="checkbox" name="">
+                <div class="bar">
+                    <span class="linetop"></span>
+                    <span class="linemiddle"></span>
+                    <span class="linebottom"></span>
+                </div>
+            </label>
+        </nav>
+        <div class="tabletcontainer">
+
+            <div class="tabletabout">
+                <div class="tabletabouttitle">
+                    <h1>基本资料</h1>
+                </div>
+                <div class="tabletaboutabovecontent">
+                    <div clas="tabletaboutcontentleft">
+                        <div class="imgbackground"></div>
+                        <img src="about_image/img1.jpg" width="309px" height="500px">
+                    </div>
+                    <div class="tabletaboutcontentright">
+                        <div class="name">
+                            <h1>沈梦瑶</h1>
+                            <h2>(SNH48 TEAM HII) 五期生</h2>
+                        </div>
+                        <div class="tabletabouticon">
+                            <div class="weiboicon"><a href="https://weibo.com/u/5681945173" target="_new"><i
+                                        class="fab fa-weibo"></i></a></div>
+                            <a href="https://space.bilibili.com/6025671?from=search&seid=1400146411014535719"
+                                target="_new"><span class="iconfont2">&#xe7c8;</span></a>
+                            <div class="tiktokicon"><a
+                                    href="https://www.douyin.com/user/MS4wLjABAAAApP4cjq-eImt-LSBdZeDQMa6qMNJ6eXJgY18t4un7V2g"
+                                    target="_new"><i class="fab fa-tiktok"></i></a></div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="details">
                     <div class="detailstitle">
@@ -65,7 +443,30 @@
                     </div>
                     <div class="detailscontant">
                         <p>MIRANDA</p>
-                        <p>瑶瑶 神喵 萨摩耶 阿拉瑶瑶</p>
+                        <div class="description">
+                            <p>瑶瑶</p>
+                            <div class="description1">
+                                <p>神喵</p>
+                                <div class="description1content">
+                                    <h4>科普</h4>
+                                    <p>神喵是沈梦瑶念快后的谐音</p>
+                                </div>
+                            </div>
+                            <div class="description2">
+                                <p>萨摩耶</p>
+                                <div class="description2content">
+                                    <h4>科普</h4>
+                                    <p>沈梦瑶=SMY=萨摩耶</p>
+                                </div>
+                            </div>
+                            <div class="description3">
+                                <p>阿拉瑶瑶</p>
+                                <div class="description3content">
+                                    <h4>科普</h4>
+                                    <p>"阿拉"在上海话中是"我的"意思,一般使用者与被使用者关系亲密，以此来称呼瑶瑶也是代表着粉丝的喜爱</p>
+                                </div>
+                            </div>
+                        </div>
                         <p>167</p>
                         <p>1998.08.14</p>
                         <p>狮子座</p>
@@ -74,46 +475,466 @@
                         <p>2015.07.25</p>
                     </div>
                 </div>
-                <div class="socialmedialogo">
-                        <div class="weiboicon"><a href="https://weibo.com/u/5681945173" target="_new"><i class="fab fa-weibo"></i></a></div>
-                        <a href="https://space.bilibili.com/6025671?from=search&seid=1400146411014535719" target="_new"><span class="iconfont2">&#xe7c8;</span></a>
-                        <div class="tiktokicon"><a href="https://www.douyin.com/user/MS4wLjABAAAApP4cjq-eImt-LSBdZeDQMa6qMNJ6eXJgY18t4un7V2g" target="_new"><i class="fab fa-tiktok"></i></a></div>
-                </div>
             </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">历届总选排名</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">剧场公演</button>
             </div>
-            
-        </div>
-        </div>
-        </div>
 
-        <nav>
-            <ul>
-                <li><a href="https://tehwy.github.io/assignment/index.html">首页</a></li>
-                <li><a href="https://tehwy.github.io/assignment/about.html">关于</a></li>
-                <li><a href="">补档安利</a></li>
-                <li><a href="">行程</a></li>
-                <li><a href="">应援会</a></li>
-                <h2>沈梦瑶官方账号：</h2>
-                <div class="phoneicon">
-                    <a href="https://weibo.com/u/5681945173"  target="_new"><i class="fab fa-weibo"></i></a>
-                    <a href="https://space.bilibili.com/6025671?from=search&seid=1400146411014535719"  target="_new"><span class="iconfontphone">&#xe7c8;</span></a>
-                    <a href="https://www.douyin.com/user/MS4wLjABAAAApP4cjq-eImt-LSBdZeDQMa6qMNJ6eXJgY18t4un7V2g" target="_new"><i class="fab fa-tiktok"></i></a>
+            <div id="London" class="tabcontent">
+                <div class="tabletrankingcontent">
+                    <h2>什么是总决选？</h2>
+                    <p>SNH48偶像年度人气总选举（又名SNH48偶像年度人气总决选）是以粉丝投票的方式确定SNH48
+                        GROUP成员的人气排名，并以此来决定下一总选专辑的录制阵容的48系年度活动。总决选的结果将直接关系到成员在下一年度所获得推广资源的力度。</p>
+                    <div class="wrapper2">
+                        <div class="center-line">
+                            <a href="#defaultOpen" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+                        </div>
+                        <div class="row row-1">
+                            <section>
+                                <i class="icon fas fa-trophy"></i>
+                                <div class="wrapperdetails">
+                                    <span class="title">第三届总决选比翼齐飞</span>
+                                    <span>2016</span>
+                                </div>
+                                <p class="wrapper2ranking">未进圈</p>
+                                <div class="bottom">
+                                    <a href="#">总选宣言</a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row row-2">
+                            <section>
+                                <i class="icon fas fa-trophy"></i>
+                                <div class="wrapperdetails">
+                                    <span class="title">第四届总决选我心翱翔</span>
+                                    <span>2017</span>
+                                </div>
+                                <p class="wrapper2ranking">第65名 </p>
+                                <p>我的初心就是站在这个舞台上唱歌跳舞给你们看<br>
+                                    明明我没有学过舞蹈更没有学过唱歌，那么我怎么有那么大的兴趣站在舞台上呢？<br>
+                                    我想这个原因一定是你们正在看我的你们，正在注视着我的你们<br>
+                                    不管怎样，我站在何处，我都会认真努力的去跳绝不划水
+                                </p>
+                                <div class="bottom">
+                                    <a href="#">总选宣言</a>
+                                    <a href="#">拉票表演</a>
+                                    <a href="#">得奖感言</a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row row-1">
+                            <section>
+                                <i class="icon fas fa-trophy"></i>
+                                <div class="wrapperdetails">
+                                    <span class="title">第五届总决选砥砺前行</span>
+                                    <span>2018</span>
+                                </div>
+                                <p class="wrapper2ranking">第48名 </p>
+                                <p>不管是怎么样，只要我有站位，有站位那肯定会好好跳<br>
+                                    哪怕是和以前一样前面的人全是挡住了<br>
+                                    我也是会继续跳，然后不管你们看不看
+                                </p>
+                                <div class="bottom">
+                                    <a href="#">总选宣言</a>
+                                    <a href="#">拉票表演</a>
+                                    <a href="#">得奖感言</a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row row-2">
+                            <section>
+                                <i class="icon fas fa-trophy"></i>
+                                <div class="wrapperdetails">
+                                    <span class="title">第六届总决选新的旅程</span>
+                                    <span>2019</span>
+                                </div>
+                                <p class="wrapper2ranking">第16名 </p>
+                                <p>不想辜负你们，不想辜负公司<br>
+                                    所以到现在我还能怀揣着一个炙热的心来面对舞台<br>
+                                    我也不后悔，把我的青春，我的所有，<br>
+                                    全都压在了那份不止8年的合同上
+                                </p>
+                                <div class="bottom">
+                                    <a href="#">总选宣言</a>
+                                    <a href="#">拉票表演</a>
+                                    <a href="#">得奖感言</a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row row-1">
+                            <section>
+                                <i class="icon fas fa-trophy"></i>
+                                <div class="wrapperdetails">
+                                    <span class="title">第七届总决选创造炙热的青春</span>
+                                    <span>2020</span>
+                                </div>
+                                <p class="wrapper2ranking">第4名</p>
+                                <p>我觉得呆在这里的每个人都是一个小疯子吧<br>
+                                    就是愿意为了自己心中那份多多少少的的执念<br>
+                                    对舞台的一份向往<br>都愿意不惜一切去拼搏，去努力练习
+                                </p>
+                                <div class="bottom">
+                                    <a href="#">总选宣言</a>
+                                    <a href="#">拉票表演</a>
+                                    <a href="#">得奖感言</a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row row-2">
+                            <section>
+                                <i class="icon fas fa-trophy"></i>
+                                <div class="wrapperdetails">
+                                    <span class="title">第八届总决选世界的48种可能</span>
+                                    <span>2021</span>
+                                </div>
+                                <p class="wrapper2ranking">第名</p>
+                                <p>我不需要处处被夸奖，被所有人喜爱，但我想被给予期望<br>
+                                    我不渴求所遇皆坦途，但所有荆棘都会被我踩成脚下之路<br>
+                                    我不执著绝对的输赢，但我偏就要一直向上前行<br>
+                                    我不要求自己次次勇敢，但我不原谅自己每次的懦弱
+                                </p>
+                                <div class="bottom">
+                                    <a href="#">总选宣言</a>
+                                    <a href="#">拉票表演</a>
+                                    <a href="#">得奖感言</a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="tabletrankingphoto">
+                        <div class="item"><img src="about_image/ranking2016_1.jpg"></div>
+                        <div class="item"><img src="about_image/ranking2017_2.jpg"></div>
+                        <div class="item"><img src="about_image/ranking2018.jpg"></div>
+                        <div class="item"><img src="about_image/ranking2019.jpg"></div>
+                        <div class="item"><img src="about_image/ranking2020.jpg"></div>
+                        <div class="item"><img src="about_image/ranking2021.jpg"></div>
+                    </div>
                 </div>
-            </ul>
-            <div class="phonelogo">
-                <a href="https://tehwy.github.io/assignment/index.html"><h1>SMY</h1></a>
             </div>
-            <label>
-                <input type="checkbox" name="">
-                <div class="bar">
-                    <span class="linetop"></span>
-                    <span class="linemiddle"></span>
-                    <span class="linebottom"></span>
+
+            <div id="Paris" class="tabcontent">
+                <p>剧场公演将于<span>每周四至日</span>在上海星梦剧院举行 <br>
+                    购票详情和安排将于<span>每周二在SNH48官方微博公布</span>。</p>
+                <div class="tablettheaterbutton">
+                    官方购票网站
                 </div>
-            </label>
-        </nav>
+                <div class="tablettheaterbox">
+                    <div class="theaterbox">
+                        <h4>2021.07.24 ~ 演出中</h4>
+                        <h4>《终极任务》</h4>
+                        <p>《渊》 《In The Dark》</p>
+                        <a href=""><i class="fas fa-play"></i></a>
+                    </div>
+                    <div class="theaterbox">
+                        <h4>2018.05.18 ~ 2021.07.11</h4>
+                        <h4>《头号新闻》</h4>
+                        <p>《Cha Cha Cha》</p>
+                        <a href=""><i class="fas fa-play"></i></a>
+                    </div>
+                    <div class="theaterbox">
+                        <h4>2017.04.08 ~ 2018.03.03</h4>
+                        <h4>《美丽世界》</h4>
+                        <p>《对峙》</p>
+                        <a href=""><i class="fas fa-play"></i></a>
+                    </div>
+                    <div class="theaterbox">
+                        <h4>2016.12.16 ~ 2017.04.01</h4>
+                        <h4>《十八个闪耀瞬间》</h4>
+                        <a href=""><i class="fas fa-play"></i></a>
+                    </div>
+                    <div class="theaterbox">
+                        <h4>2016.03.26 ~ 2016.12.11</h4>
+                        <h4>《偶像黎明》</h4>
+                        <a href=""><i class="fas fa-play"></i></a>
+                    </div>
+                    <div class="theaterbox">
+                        <h4>2015.05.29 ~ 2016.03.20</h4>
+                        <h4>《手牵手》</h4>
+                        <a href=""><i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="tablettheaterimagebox">
+                    <div class="theaterimagebox"><img src="about_image/theaterimg_2.jpg"></div>
+                    <div class="theaterimagebox"><img src="about_image/theaterimg_3.jpg"></div>
+                    <div class="theaterimagebox"><img src="about_image/theaterimg_4.jpg"></div>
+                    <div class="theaterimagebox"><img src="about_image/theaterimg_5.jpg"></div>
+                    <div class="theaterimagebox"><img src="about_image/theaterimg_6.jpg"></div>
+                    <div class="theaterimagebox"><img src="about_image/theaterimg_7.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="phonecontainer">
+            <div class="phonecontainerabout">
+                <div class="phoneabout">
+                    <div class="phoneabouttitle">
+                        <h1>基本资料</h1>
+                    </div>
+                    <div class="phoneaboutphoto">
+                        <img src="about_image/img1.jpg" width="247px" height="400px">
+                    </div>
+                    <div class="phoneaboutname">
+                        <h1>沈梦瑶</h1>
+                        <h2>SNH48 TEAM HII 五期生</h2>
+                    </div>
+                    <div class="phonedetails">
+                        <div class="phonedetailstitle">
+                            <h3>英文名</h3>
+                            <h3>昵称</h3>
+                            <h3>官方身高</h3>
+                            <h3>生日</h3>
+                            <h3>星座</h3>
+                            <h3>出生地</h3>
+                            <h3>所属公司</h3>
+                            <h3>亮相日期</h3>
+                        </div>
+                        <div class="phonedescription">
+                            <p>MIRANDA</p>
+                            <p>瑶瑶 神喵 萨摩耶 阿拉瑶瑶</p>
+                            <p>167</p>
+                            <p>1998.08.14</p>
+                            <p>狮子座</p>
+                            <p>中国上海</p>
+                            <p>上海丝芭文化传媒集团有限公司</p>
+                            <p>2015.07.25</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="phoneranking">
+                    <div class="phonerankingtitle">
+                        <h1>历届总选排名</h1>
+                    </div>
+                    <div class="phonerankingdetails">
+                        <h2>什么是总决选？</h2>
+                        <p>SNH48偶像年度人气总选举（又名SNH48偶像年度人气总决选）是以粉丝投票的方式确定SNH48
+                            GROUP成员的人气排名，并以此来决定下一总选专辑的录制阵容的48系年度活动。总决选的结果将直接关系到成员在下一年度所获得推广资源的力度。</p>
+                    </div>
+                    <div class="phonerankingbutton">
+                        <h4>查看历届排名</h4>
+                    </div>
+                    <div class="content1">
+                        <div class="wrapper2">
+                            <div class="center-line">
+                                <a href="#defaultOpen" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+                            </div>
+                            <div class="row row-1">
+                                <section>
+                                    <i class="icon fas fa-trophy"></i>
+                                    <div class="wrapperdetails">
+                                        <span class="title">第三届总决选比翼齐飞</span>
+                                        <span>2016</span>
+                                    </div>
+                                    <p class="wrapper2ranking">未进圈</p>
+                                    <div class="bottom">
+                                        <a href="#">总选宣言</a>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="row row-2">
+                                <section>
+                                    <i class="icon fas fa-trophy"></i>
+                                    <div class="wrapperdetails">
+                                        <span class="title">第四届总决选我心翱翔</span>
+                                        <span>2017</span>
+                                    </div>
+                                    <p class="wrapper2ranking">第65名 </p>
+                                    <p>我的初心就是站在这个舞台上唱歌跳舞给你们看<br>
+                                        明明我没有学过舞蹈更没有学过唱歌，那么我怎么有那么大的兴趣站在舞台上呢？<br>
+                                        我想这个原因一定是你们正在看我的你们，正在注视着我的你们<br>
+                                        不管怎样，我站在何处，我都会认真努力的去跳绝不划水
+                                    </p>
+                                    <div class="bottom">
+                                        <a href="#">总选宣言</a>
+                                        <a href="#">拉票表演</a>
+                                        <a href="#">得奖感言</a>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="row row-1">
+                                <section>
+                                    <i class="icon fas fa-trophy"></i>
+                                    <div class="wrapperdetails">
+                                        <span class="title">第五届总决选砥砺前行</span>
+                                        <span>2018</span>
+                                    </div>
+                                    <p class="wrapper2ranking">第48名 </p>
+                                    <p>不管是怎么样，只要我有站位，有站位那肯定会好好跳<br>
+                                        哪怕是和以前一样前面的人全是挡住了<br>
+                                        我也是会继续跳，然后不管你们看不看
+                                    </p>
+                                    <div class="bottom">
+                                        <a href="#">总选宣言</a>
+                                        <a href="#">拉票表演</a>
+                                        <a href="#">得奖感言</a>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="row row-2">
+                                <section>
+                                    <i class="icon fas fa-trophy"></i>
+                                    <div class="wrapperdetails">
+                                        <span class="title">第六届总决选新的旅程</span>
+                                        <span>2019</span>
+                                    </div>
+                                    <p class="wrapper2ranking">第16名 </p>
+                                    <p>不想辜负你们，不想辜负公司<br>
+                                        所以到现在我还能怀揣着一个炙热的心来面对舞台<br>
+                                        我也不后悔，把我的青春，我的所有，<br>
+                                        全都压在了那份不止8年的合同上
+                                    </p>
+                                    <div class="bottom">
+                                        <a href="#">总选宣言</a>
+                                        <a href="#">拉票表演</a>
+                                        <a href="#">得奖感言</a>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="row row-1">
+                                <section>
+                                    <i class="icon fas fa-trophy"></i>
+                                    <div class="wrapperdetails">
+                                        <span class="title">第七届总决选创造炙热的青春</span>
+                                        <span>2020</span>
+                                    </div>
+                                    <p class="wrapper2ranking">第4名</p>
+                                    <p>我觉得呆在这里的每个人都是一个小疯子吧<br>
+                                        就是愿意为了自己心中那份多多少少的的执念<br>
+                                        对舞台的一份向往<br>都愿意不惜一切去拼搏，去努力练习
+                                    </p>
+                                    <div class="bottom">
+                                        <a href="#">总选宣言</a>
+                                        <a href="#">拉票表演</a>
+                                        <a href="#">得奖感言</a>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="row row-2">
+                                <section>
+                                    <i class="icon fas fa-trophy"></i>
+                                    <div class="wrapperdetails">
+                                        <span class="title">第八届总决选世界的48种可能</span>
+                                        <span>2021</span>
+                                    </div>
+                                    <p class="wrapper2ranking">第名</p>
+                                    <p>我不需要处处被夸奖，被所有人喜爱，但我想被给予期望<br>
+                                        我不渴求所遇皆坦途，但所有荆棘都会被我踩成脚下之路<br>
+                                        我不执著绝对的输赢，但我偏就要一直向上前行<br>
+                                        我不要求自己次次勇敢，但我不原谅自己每次的懦弱
+                                    </p>
+                                    <div class="bottom">
+                                        <a href="#">总选宣言</a>
+                                        <a href="#">拉票表演</a>
+                                        <a href="#">得奖感言</a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="slideshow-container">
+        
+                            <div class="mySlides fade">
+                              <img src="about_image/ranking2016_1.jpg">
+                              <div class="text">2016</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <img src="about_image/ranking2017_2.jpg" >
+                              <div class="text">2017</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <img src="about_image/ranking2018 _1.jpg" >
+                              <div class="text">2018</div>
+                            </div>
+        
+                            <div class="mySlides fade">
+                                <img src="about_image/ranking2019.jpg" >
+                                <div class="text">2019</div>
+                              </div>
+        
+                              <div class="mySlides fade">
+                                <img src="about_image/ranking2020.jpg" >
+                                <div class="text">2020</div>
+                              </div>
+        
+                              <div class="mySlides fade">
+                                <img src="about_image/ranking2021.jpg" >
+                                <div class="text">2021</div>
+                              </div>
+                            </div>
+                            <div class="dotbox">
+                                <span class="dot" onclick="currentSlide(0)"></span> 
+                                <span class="dot" onclick="currentSlide(1)"></span> 
+                                <span class="dot" onclick="currentSlide(2)"></span> 
+                                <span class="dot" onclick="currentSlide(3)"></span> 
+                                <span class="dot" onclick="currentSlide(4)"></span> 
+                                <span class="dot" onclick="currentSlide(5)"></span> 
+                              </div>
+                    </div>
+                </div>
+                <div class="phoneranking">
+                    <div class="phonerankingtitle">
+                        <h1>剧场公演</h1>
+                    </div>
+                    <div class="phonerankingdetails">
+                        <p>剧场公演将于每周四至日在上海星梦剧院举行 <br>
+                            购票详情和安排将于每周二在SNH48官方微博公布</p>
+                    </div>
+                    <div class="phonetheaterbutton">
+                        <h4>查看历届公演</h4>
+                    </div>
+                    <div class="content2">
+                        <div class="tablettheaterbox">
+                        <div class="theaterbox">
+                            <h4>2021.07.24 ~ 演出中</h4>
+                            <h4>《终极任务》</h4>
+                            <p>《渊》 《In The Dark》</p>
+                            <a href=""><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="theaterbox">
+                            <h4>2018.05.18 ~ 2021.07.11</h4>
+                            <h4>《头号新闻》</h4>
+                            <p>《Cha Cha Cha》</p>
+                            <a href=""><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="theaterbox">
+                            <h4>2017.04.08 ~ 2018.03.03</h4>
+                            <h4>《美丽世界》</h4>
+                            <p>《对峙》</p>
+                            <a href=""><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="theaterbox">
+                            <h4>2016.12.16 ~ 2017.04.01</h4>
+                            <h4>《十八个闪耀瞬间》</h4>
+                            <a href=""><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="theaterbox">
+                            <h4>2016.03.26 ~ 2016.12.11</h4>
+                            <h4>《偶像黎明》</h4>
+                            <a href=""><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="theaterbox">
+                            <h4>2015.05.29 ~ 2016.03.20</h4>
+                            <h4>《手牵手》</h4>
+                            <a href=""><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="tablettheaterimagebox">
+                        <div class="theaterimagebox"><img src="about_image/theaterimg_2.jpg"></div>
+                        <div class="theaterimagebox"><img src="about_image/theaterimg_3.jpg"></div>
+                        <div class="theaterimagebox"><img src="about_image/theaterimg_4.jpg"></div>
+                        <div class="theaterimagebox"><img src="about_image/theaterimg_5.jpg"></div>
+                        <div class="theaterimagebox"><img src="about_image/theaterimg_6.jpg"></div>
+                        <div class="theaterimagebox"><img src="about_image/theaterimg_7.jpg"></div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
-    
+
+    <script src="script/about.js"></script>
 
 </body>
-</head>
+</html>
