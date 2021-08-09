@@ -13,19 +13,102 @@
 
     <title>w13 ex1</title>
 </head>
+<style>
+    .jumbotron{
+        margin-bottom: 0;
+    }
+
+    .container{
+        margin-top: 30px;
+    }
+
+    .carousel-indicators{
+        height: 10px;
+    }
+
+    form{
+      
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        margin-bottom: 20px;
+    }
+
+
+</style>
 
 <body>
-    <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-            featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
-            Learn More
-        </button>
-        <button type="button" class="btn btn-danger btn-lg" data-toggle="popover" title="Popover title"
-            data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="jumbotron" alt="First slide" >
+                    <h1 class="display-4">Hello, world!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                        attention to
+                        featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger
+                        container.</p>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                        data-target="#exampleModal">
+                        Learn More
+                    </button>
+                    <button type="button" class="btn btn-danger btn-lg" data-toggle="popover" title="Popover title"
+                        data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                        popover</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="jumbotron" alt="Second slide">
+                    <h1 class="display-4">This is second slide</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                        attention to
+                        featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger
+                        container.</p>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                        data-target="#exampleModal">
+                        Learn More
+                    </button>
+                    <button type="button" class="btn btn-danger btn-lg" data-toggle="popover" title="Popover title"
+                        data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                        popover</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="jumbotron" alt="Third slide">
+                    <h1 class="display-4">This is thrid slide</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                        attention to
+                        featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger
+                        container.</p>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                        data-target="#exampleModal">
+                        Learn More
+                    </button>
+                    <button type="button" class="btn btn-danger btn-lg" data-toggle="popover" title="Popover title"
+                        data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                        popover</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" data-keyboard="false">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -49,6 +132,131 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Column 1</h3>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Column 2</h3>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Column 3</h3> 
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+    </div>
+
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="validationTooltipUsername">Username</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="mt-3 mb-4">
+            <div class="form-row">
+                <div class="pb-1"> Gender :</div>
+
+                <div class="form-check form-check-inline ml-3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+            </div>
+        </div>
+
+          
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+
+
+      <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -65,7 +273,7 @@
             $('[data-toggle="popover"]').popover()
         })
     </script>
-    
+
 </body>
 
 </html>
