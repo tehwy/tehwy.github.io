@@ -1,0 +1,191 @@
+.content{
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: baseline;
+}
+
+.leftcontent{
+    padding-left: 10px;
+    width: 40%;
+}
+
+.title{
+    border-bottom: 2px solid black;
+}
+
+.title h1{
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.title h2{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:5px;
+}
+
+
+.schedulebox .date{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.schedulebox p{
+    font-size: 18px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 600;
+}
+
+.schedulebox p span{
+    font-size: 18px;
+     margin-right: 10px;
+}
+
+.schedulebox p .w{
+    color: #F596C3;
+}
+
+.schedulebox p .g{
+    color: #72D2C0;
+}
+
+.schedulebox p .q{
+    color: #F1BD4C;
+}
+.schedulebox p .z{
+    color: #E79C89;
+}
+
+.rightcontent{
+    padding-right: 10px;
+    width: 60%;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rightcontent h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.month ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li{
+    width: 10%;
+    text-align: center;
+    font-weight: bold;
+    color: #464646;
+}
+
+.month ul li.active{
+    border-bottom: 2px solid #464646;
+}
+
+.weekdays li{
+    display: inline-block;
+    width: 13.6%;
+    margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.daycontainer{
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+.dayrow1,
+.dayrow2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dayrow1 li,
+.dayrow2 li{
+    display: inline-block;
+    align-items: center;
+    width: 14%;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.dayrow2 li.active{
+  color: #FF8839;
+}
+
+.note{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.note p{
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.note p span{
+    margin-right: 10px;
+}
+
+.note p .w{
+    color: #F596C3;
+}
+
+.note p .g{
+    color: #72D2C0;
+}
+
+.note p .q{
+    color: #F1BD4C;
+}
+.note p .z{
+    color: #E79C89;
+}
+.note p .q{
+    color: #F1BD4C;
+}
+
+@media screen and (max-width: 960px) {
+    .content{
+        margin-top: 80px;
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .leftcontent{
+        width: 100%;
+        border-bottom: 10px dashed #DBDBDB;
+    }
+
+    .rightcontent{
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .note{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .content{
+        margin-top: 40px;
+        transform: scale(0.9);
+    }
+}
+
+
