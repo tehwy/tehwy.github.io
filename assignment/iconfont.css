@@ -38,6 +38,13 @@
   cursor: pointer;
 }
 
+.iconfont4 {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 a{
   text-decoration: none;
 }
